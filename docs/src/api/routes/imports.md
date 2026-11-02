@@ -1,8 +1,8 @@
 # Import Document Endpoints
 
-!!! note
-	This should not be confused with [Import Endpoints](./import.md). Those are for 
-	importing scores, whereas these endpoints are for Import Document interaction.
+> [!note]
+> This should not be confused with [Import Endpoints](./import.md). Those are for
+> importing scores, whereas these endpoints are for Import Document interaction.
 
 *****
 
@@ -33,16 +33,16 @@ None.
 
 `POST /api/v1/imports/:importID/revert`
 
-!!! info
-	This endpoint is intended to *undo* a faulty import. For example, if you were using
-	a batch-manual script that somehow went haywire. Normal users should *not* need to
-	use this, but it is on the UI regardless incase they cause catastrophic failure.
+> [!note]
+> This endpoint is intended to *undo* a faulty import. For example, if you were using
+> a batch-manual script that somehow went haywire. Normal users should *not* need to
+> use this, but it is on the UI regardless incase they cause catastrophic failure.
 
-!!! warning
-	Reverting an import is equivalent to undoing all of the scores that were imported as
-	a result of the import. This, however, does not necessitate that classes will be
-	reverted, such as if the import also declared you as kaiden -- that currently requires
-	manual moderator intervention.
+> [!warning]
+> Reverting an import is equivalent to undoing all of the scores that were imported as
+> a result of the import. This, however, does not necessitate that classes will be
+> reverted, such as if the import also declared you as kaiden -- that currently requires
+> manual moderator intervention.
 
 ### Permissions
 
@@ -63,22 +63,24 @@ None. (Empty Object)
 
 `GET /api/v1/imports/:importID/poll-status`
 
-!!! question
-	The reason we can't directly respond with import info is that `tachi-server` **may**
-	use a feature called SCORE_IMPORT_WORKERS. This dedicates score processing to separate
-	processes which communicate back with any parent server. This means that the result of
-	an import processed on one server may be returned by another.
+> [!note]
+> **Question:**
+>
+> The reason we can't directly respond with import info is that `tachi-server` **may**
+> use a feature called SCORE_IMPORT_WORKERS. This dedicates score processing to separate
+> processes which communicate back with any parent server. This means that the result of
+> an import processed on one server may be returned by another.
+>
+> This feature is enabled on our instances of `tachi-server` -- Boku and Kamai, which
+> means you will have to poll this endpoint.
 
-	This feature is enabled on our instances of `tachi-server` -- Boku and Kamai, which
-	means you will have to poll this endpoint.
+> [!note]
+> You are intended to poll this endpoint every one second or so. Do it until
+> `body.importStatus` is "completed".
 
-!!! info
-	You are intended to poll this endpoint every one second or so. Do it until
-	`body.importStatus` is "completed".
-
-!!! tip
-	`body.progress.description` is human-friendly output, you can render it to
-	a client on every ping in the case where `body.importStatus` is "ongoing".
+> [!tip]
+> `body.progress.description` is human-friendly output, you can render it to
+> a client on every ping in the case where `body.importStatus` is "ongoing".
 
 ### Parameters
 

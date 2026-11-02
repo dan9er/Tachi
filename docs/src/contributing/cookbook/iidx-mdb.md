@@ -2,10 +2,10 @@
 
 Updating seeds via IIDX data is a complicated endeavour. Luckily, we've automated it with scripts.
 
-!!! important
-	You need to have a working setup of Tachi to use this script.
-
-	For instructions on how to do that, see [Tachi Setup](../setup.md).
+> [!important]
+> You need to have a working setup of Tachi to use this script.
+>
+> For instructions on how to do that, see [Tachi Setup](../setup.md).
 
 ## How to use
 

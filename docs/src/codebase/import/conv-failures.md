@@ -22,10 +22,12 @@ imported.
 
 ## SongOrChartNotFoundFailure
 
-!!! bug
-	KTData means 'Kamaitachi Data', but this applies to
-	Bokutachi just as much, it is just a legacy name
-	holdover.
+> [!note]
+> **Bug:**
+>
+> KTData means 'Kamaitachi Data', but this applies to
+> Bokutachi just as much, it is just a legacy name
+> holdover.
 
 This failure means that the score could not match with
 anything in the database, such as giving a chartID that
@@ -49,9 +51,9 @@ The most common case for throwing this is the "Song-Chart"
 desync. This occurs when a chart has no parent song (and
 a chart must have a parent song.)
 
-!!! info
-	This is generally used for states that should never happen,
-	but we want to handle them nicely anyway.
+> [!note]
+> This is generally used for states that should never happen,
+> but we want to handle them nicely anyway.
 
 ## Any Exception
 

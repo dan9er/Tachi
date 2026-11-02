@@ -13,17 +13,19 @@ This field declares how 'close' the provided query was to the $text fields in th
 
 This is sometimes exposed in the API for sorting reasons.
 
-!!! bug
-	MongoDB's $text matching algorithm isn't great for fuzzy matches - It doesn't
-	like song titles like 'A', as it thinks 'a' is an article, and doesn't match it properly as
-	a word.
+> [!note]
+> **Bug:**
+>
+> MongoDB's $text matching algorithm isn't great for fuzzy matches - It doesn't
+> like song titles like 'A', as it thinks 'a' is an article, and doesn't match it properly as
+> a word.
 
-!!! info
-	Why not regex for fuzzy matches?
-	
-	Regex has performance issues on larger datasets and we
-	want to avoid it. Most regexes cannot use indexes, and therefore invoke a COLLSCAN, which
-	we want to avoid.
+> [!note]
+> Why not regex for fuzzy matches?
+>
+> Regex has performance issues on larger datasets and we
+> want to avoid it. Most regexes cannot use indexes, and therefore invoke a COLLSCAN, which
+> we want to avoid.
 
 ## User Searching
 

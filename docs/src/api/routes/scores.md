@@ -1,8 +1,8 @@
 # Score Endpoints
 
-!!! note
-	Scores are *not* personal bests. For more information
-	on the distinction, see [PBs and Scores](../../wiki/pbs-scores.md).
+> [!note]
+> Scores are *not* personal bests. For more information
+> on the distinction, see [PBs and Scores](../../wiki/pbs-scores.md).
 
 *****
 
@@ -69,9 +69,9 @@ GET /api/v1/scores/Re7b00261b1d3ba8e5c9ee4e76e77ea9f07d9493b
 | `comment` (Optional) | Null or String | A string between 1 and 120 characters, or null. If null, the score will have its comment unset. If not, the comment for this score will be set to its contents. If the key is not present, no change will be made. |
 | `highlight` (Optional) | Boolean | Whether this score was a highlight or not. If this field is not present, no change will be made to the highlight status. |
 
-!!! info
-	Although all of these fields are optional, providing none
-	of them is a 400 failure.
+> [!note]
+> Although all of these fields are optional, providing none
+> of them is a 400 failure.
 
 ### Response
 
@@ -110,8 +110,8 @@ PATCH /api/v1/scores/Re7b00261b1d3ba8e5c9ee4e76e77ea9f07d9493b
 
 `DELETE /api/v1/scores/:scoreID`
 
-!!! info
-	Deleting a score will result in profile recalculations and PB updates.
+> [!note]
+> Deleting a score will result in profile recalculations and PB updates.
 
 ### Permissions
 

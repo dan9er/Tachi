@@ -42,11 +42,11 @@ or our [Client File Flow](../codebase/infrastructure/file-flow.md).
 An API key does not implicitly have permission to do anything on a users behalf for security reasons.
 Some endpoints require specific permissions, such as a `score_submit` permission for submitting scores.
 
-!!! warning
-	API keys **can not** have their permissions altered once set, a new key must be generated.
+> [!warning]
+> API keys **can not** have their permissions altered once set, a new key must be generated.
 
-!!! info
-	Cookie-based authentication always has *all* permissions for the user.
+> [!note]
+> Cookie-based authentication always has *all* permissions for the user.
 
 ### Table Of Permissions
 

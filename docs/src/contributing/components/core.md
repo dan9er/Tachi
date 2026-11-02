@@ -26,11 +26,11 @@ With `just start` running, the client will listen for changes you make, and relo
 
 Likewise, with `just start` running, the server will listen for changes you make, and reload accordingly.
 
-!!! warning
-	Be careful with triggering a server reload. If you do it mid-import you can cause some serious state issues.
-
-	If you suspect that your local state is screwed up, run `just wipe-local-db` to reset
-	the database.
+> [!warning]
+> Be careful with triggering a server reload. If you do it mid-import you can cause some serious state issues.
+>
+> If you suspect that your local state is screwed up, run `just wipe-local-db` to reset
+> the database.
 
 ## Getting real data
 

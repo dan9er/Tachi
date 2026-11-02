@@ -318,12 +318,12 @@ GET /api/v1/users/1/games/iidx/SP/pbs/some_chart_id
 | `charts` |         Array&lt;[ChartDocument](../../schemas/chart.md)&gt;          |                The array of charts this search returned.                 |
 | `scores` |         Array&lt;[ScoreDocument](../../schemas/score.md)&gt;          | The array of scores this search returned. This is limited to 30 returns. |
 
-!!! info
-All `songs` returned also have the `__textScore`
+> [!note]
+> All `songs` returned also have the `__textScore`
 property. This property describes how close the query
 was to the actual text, and is mostly internal.
-
-    You can read more into the details of this at [Search Implementation](../../codebase/implementation-details/search.md)
+>
+> You can read more into the details of this at [Search Implementation](../../codebase/implementation-details/search.md)
 
 ### Example
 
@@ -491,8 +491,8 @@ GET /api/v1/users/zkldimes/iidx/SP/sessions/best
 
 #### Response
 
-!!! info
-The default rating algorithm for IIDX:SP is `ktRating`.
+> [!note]
+> The default rating algorithm for IIDX:SP is `ktRating`.
 
 ```js
 [
@@ -542,9 +542,9 @@ None.
 
 `GET /api/v1/users/:userID/games/:gameGroup/:playtype/sessions/last`
 
-!!! info
-This endpoint will return 404 if the user has never had a
-session for this game.
+> [!note]
+> This endpoint will return 404 if the user has never had a
+> session for this game.
 
 ### Parameters
 
@@ -817,9 +817,9 @@ GET /api/v1/users/1/games/iidx/SP/history
 
 `GET /api/v1/users/:userID/games/:gameGroup/:playtype/settings`
 
-!!! warning
-Unlike most other applications, your settings are completely public. GPT Settings only concern
-cosmetic things, like what rating algorithms to prefer.
+> [!warning]
+> Unlike most other applications, your settings are completely public. GPT Settings only concern
+> cosmetic things, like what rating algorithms to prefer.
 
 ### Parameters
 
@@ -856,9 +856,9 @@ GET /api/v1/users/1/games/iidx/SP/settings
 
 `PATCH /api/v1/users/:userID/games/:gameGroup/:playtype/settings`
 
-!!! note
-Although `stats` are part of your settings, they are not modifiable under these endpoints,
-instead you should use [UGPT Showcase Endpoints](./ugpt-showcase.md).
+> [!note]
+> Although `stats` are part of your settings, they are not modifiable under these endpoints,
+> instead you should use [UGPT Showcase Endpoints](./ugpt-showcase.md).
 
 ### Permissions
 

@@ -2,8 +2,8 @@
 
 This game has the internal GPTString of `popn:9B`.
 
-!!! note
-	For information on what each section means, please see [Common Config](../common-config/index.md).
+> [!note]
+> For information on what each section means, please see [Common Config](../common-config/index.md).
 
 ## Metrics
 

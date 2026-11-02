@@ -5,17 +5,17 @@ Tachi exposes a public API which allows programs to interact with Tachi.
 This means you could make your own applications that work off of Tachi's
 datasets.
 
-!!! warning
-This documentation assumes some basic programming knowledge, such as how to make
-HTTP requests, and how to parse JSON.
+> [!warning]
+> This documentation assumes some basic programming knowledge, such as how to make
+> HTTP requests, and how to parse JSON.
 
 Depending on what variant of Tachi you want to interact with, the API is hosted
 on `https://kamai.tachi.ac/api/v1` or `https://boku.tachi.ac/api/v1`.
 
-!!! note
-Some API endpoints are only available on Kamaitachi or Bokutachi. If an
-endpoint has this restriction, it will be documented on that endpoints'
-page.
+> [!note]
+> Some API endpoints are only available on Kamaitachi or Bokutachi. If an
+> endpoint has this restriction, it will be documented on that endpoints'
+> page.
 
 ---
 
@@ -38,8 +38,7 @@ send an email to `zk@tachi.ac` and let me know what you're up to. Otherwise, I m
 
 To quote GitHub:
 
-!!! quote
-Permissions of this strongest copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. When a modified version is used to provide a service over a network, the complete source code of the modified version must be made available.
+> Permissions of this strongest copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. When a modified version is used to provide a service over a network, the complete source code of the modified version must be made available.
 
 This is not legal advice.
 
@@ -83,13 +82,13 @@ As the name implies, the Failed Response is returned when a request fails.
 
 The HTTP Status Code for any Failed Response will always be of either 4XX or 5XX form.
 
-!!! warning
-The `description` property is **NOT** intended for program usage. You should **NEVER** depend
-on the output of `description`, as it may be changed at any time for any reason.
+> [!warning]
+> The `description` property is **NOT** intended for program usage. You should **NEVER** depend
+> on the output of `description`, as it may be changed at any time for any reason.
 
-!!! note
-Any API request can fail for any reason. You should always account for the
-case where the request fails.
+> [!note]
+> Any API request can fail for any reason. You should always account for the
+> case where the request fails.
 
 ## Footnote
 

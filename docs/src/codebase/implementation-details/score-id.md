@@ -12,10 +12,12 @@ Sadly, we can't depend on things like timestamps to assert
 whether or whether not we've saw a score before. Many services
 alter/tamper their timestamps such that they're unreliable.
 
-!!! example
-	E-Amusement IIDX CSVs will change the timestamp of every single
-	score when a new version comes out to the second the user created
-	their new account.
+> [!note]
+> **Example:**
+>
+> E-Amusement IIDX CSVs will change the timestamp of every single
+> score when a new version comes out to the second the user created
+> their new account.
 
 *****
 

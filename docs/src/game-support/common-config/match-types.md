@@ -55,8 +55,8 @@ If `"AnyBeyond"` is the difficulty, then that difficulty will try to find a char
 
 Looks up the song on its title or any of its defined `altTitles`. Can also match the artist field of the song if an `artist` property is defined.
 
-!!! warning
-	It is generally not recommended to enable this method, as it's particularly error-prone. Scores that can't be unequivocally identified will get rejected.
+> [!warning]
+> It is generally not recommended to enable this method, as it's particularly error-prone. Scores that can't be unequivocally identified will get rejected.
 
 ### `tachiSongID`
 

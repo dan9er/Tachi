@@ -79,8 +79,8 @@ Open a terminal and type this:
     brew install docker docker-compose
     ```
 
-!!! info
-Docker is like a VM[^1]. It runs an entire Linux box to contain your software in, and generally sidesteps the whole "works on some machines" problem.
+> [!note]
+> Docker is like a VM[^1]. It runs an entire Linux box to contain your software in, and generally sidesteps the whole "works on some machines" problem.
 
 ## 2. Fork and pull the repo.
 
@@ -90,10 +90,10 @@ Go to [the Tachi repository](https://github.com/zkldi/Tachi) and click the Fork 
 
 Now, back to the terminal:
 
-!!! tip
-It's good organisation to make a folder on your PC for codestuffs.
-If you do that, make sure you open the terminal in that folder,
-so your Tachi repo will save there!
+> [!tip]
+> It's good organisation to make a folder on your PC for codestuffs.
+> If you do that, make sure you open the terminal in that folder,
+> so your Tachi repo will save there!
 
 Open a terminal and type the following commands:
 
@@ -126,11 +126,11 @@ With `VSCode` open to Tachi, install the [Dev Container](https://marketplace.vis
 
 Then, hit `Ctrl+Shift+P` to view all commands, and run `Dev Containers: Rebuild and Reopen in Container`.
 
-!!! warning
-First time setup can take a very long time.
-This depends on the performance of your machine, and whether you're using Windows or not.
-
-    You can click `view log` in the bottom right to see the progress of making the container.
+> [!warning]
+> First time setup can take a very long time.
+> This depends on the performance of your machine, and whether you're using Windows or not.
+>
+> You can click `view log` in the bottom right to see the progress of making the container.
 
 ### Working in the container
 
@@ -167,8 +167,8 @@ With a terminal open inside the `Tachi` container you just cloned, run `just sta
 The frontend will be running on `http://localhost:3000`.
 The backend listens on `http://localhost:8080`, and the Vite dev server **proxies** `/api` and `/ir` there so the browser talks to the app on port 3000 only (same-origin HTTP, no self-signed certificates).
 
-!!! tip
-Type `just` in the terminal to see other available commands.
+> [!tip]
+> Type `just` in the terminal to see other available commands.
 
 Navigate to http://localhost:3000 and check your Tachi instance!
 

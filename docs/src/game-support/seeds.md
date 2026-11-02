@@ -10,9 +10,9 @@ The database seeds are a folder in the monorepo: `seeds/collections`, which cont
 
 These JSON files contain the state of a lot of our databases that need to be loaded. When changes are made to these seeds and committed to the main repository, a script will automatically apply those changes to the database.
 
-!!! info
-	For local usage, you can use `pnpm sync-database-local` in the terminal to sync
-	the database with your local seeds.
+> [!note]
+> For local usage, you can use `pnpm sync-database-local` in the terminal to sync
+> the database with your local seeds.
 
 ## Adding songs and charts
 

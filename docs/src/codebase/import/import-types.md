@@ -39,10 +39,10 @@ users imports page.
 For certain endpoints, the special header `X-User-Intent`
 is set to indicate that this was done with User Intent.
 
-!!! warning
-	As this is just a convention, you can abuse it, but you
-	shouldn't, because it's not nice to break things
-	(and you may be banned).
+> [!warning]
+> As this is just a convention, you can abuse it, but you
+> shouldn't, because it's not nice to break things
+> (and you may be banned).
 
 ## List of Import Types
 

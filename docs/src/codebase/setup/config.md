@@ -93,11 +93,11 @@ the main benefits for us are as follows:
 }
 ```
 
-!!! warning
-	**DO NOT BLINDLY COPY THIS CONFIGURATION FILE!**
-
-	Seriously, The `SESSION_SECRET` token MUST not be
-	public.
+> [!warning]
+> **DO NOT BLINDLY COPY THIS CONFIGURATION FILE!**
+>
+> Seriously, The `SESSION_SECRET` token MUST not be
+> public.
 
 ## JSON5 Properties
 
@@ -122,16 +122,16 @@ to work on our site.
 
 This key is used to encrypt Session Cookies.
 
-!!! warning
-	If this key is figured out, anyone can log in as
-	anyone.
-
-	Make sure this is an appropriately long string
-	generated from a *cryptographically secure* source. 
-	That is, do not just mash your keyboard.
-
-	You can generate secure random strings with something 
-	like [KeePass](https://keepass.info/).
+> [!warning]
+> If this key is figured out, anyone can log in as
+> anyone.
+>
+> Make sure this is an appropriately long string
+> generated from a *cryptographically secure* source. 
+> That is, do not just mash your keyboard.
+>
+> You can generate secure random strings with something 
+> like [KeePass](https://keepass.info/).
 
 ### FLO_API_URL, EAG_API_URL, MIN_API_URL
 
@@ -155,10 +155,10 @@ If present, these define our OAuth2 Client data for interacting with these servi
 }
 ```
 
-!!! warning
-	The server will throw a fatal error if you have OAUTH2_INFO set for one service, but not an API_URL.
-
-	Maybe a better solution would be to have the API_URL inside the OAUTH2_INFO. Ah well.
+> [!warning]
+> The server will throw a fatal error if you have OAUTH2_INFO set for one service, but not an API_URL.
+>
+> Maybe a better solution would be to have the API_URL inside the OAUTH2_INFO. Ah well.
 
 ### CLIENT_DEV_SERVER
 
@@ -199,11 +199,11 @@ If true, all `OPTIONS` requests to the server will return `200`, no matter what.
 
 How many unique players have to have played a chart on the beatoraja IR for it to be de-orphaned.
 
-!!! note
-	Note that LR2 scores or database imports do not count towards this total.
+> [!note]
+> Note that LR2 scores or database imports do not count towards this total.
 
-!!! warning
-	The lowest legal value for this field is 2.
+> [!warning]
+> The lowest legal value for this field is 2.
 
 ### OUR_URL
 
@@ -379,9 +379,9 @@ Configures the S3-compatible API endpoint and bucket used for uploads (profile p
 
 The process environment also contains necessary things for functional Tachi Server running.
 
-!!! info
-	These variables are put into the process environment instead of the conf.json5 file because
-	they're easier to change between docker instances. This Helps us scale and deploy.
+> [!note]
+> These variables are put into the process environment instead of the conf.json5 file because
+> they're easier to change between docker instances. This Helps us scale and deploy.
 
 ### PORT
 

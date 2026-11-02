@@ -2,18 +2,18 @@
 
 These endpoints relate to internal authentication methods. Read the warning below.
 
-!!! danger
-This is **NOT** for external use. You should **NEVER**
-be requesting a username and password from a user.
+> [!caution]
+> This is **NOT** for external use. You should **NEVER**
+> be requesting a username and password from a user.
+>
+> Furthermore, interacting with this programmatically
+> is near-impossible because you need to complete a CAPTCHA.
+>
+> Nevertheless, This is documented for completeness' sake.
 
-    Furthermore, interacting with this programmatically
-    is near-impossible because you need to complete a CAPTCHA.
-
-    Nevertheless, This is documented for completeness' sake.
-
-!!! warning
-All of these endpoints are aggressively rate limited. If you fire a bot at this, you will probably get
-your IP blacklisted. Don't do that.
+> [!warning]
+> All of these endpoints are aggressively rate limited. If you fire a bot at this, you will probably get
+> your IP blacklisted. Don't do that.
 
 ---
 
@@ -31,11 +31,11 @@ Logs a user in and returns a session cookie.
 | `!password` | String |                                   The user's password.                                    |
 |  `captcha`  | String | The hCaptcha response token from the client widget; the server verifies it with hCaptcha. |
 
-!!! info
-The `!` prefix is special in that anything with it is assumed to be private and is **always**
-ignored by our request logger.
-
-    Without it, we would log passwords!
+> [!note]
+> The `!` prefix is special in that anything with it is assumed to be private and is **always**
+> ignored by our request logger.
+>
+> Without it, we would log passwords!
 
 ### Response
 
@@ -221,9 +221,9 @@ Nothing.
 
 `POST /api/v1/auth/forgot-password`
 
-!!! note
-This endpoint sends the password reset code pretty-printed to the email, and is **NOT**
-returned as part of the HTTP request.
+> [!note]
+> This endpoint sends the password reset code pretty-printed to the email, and is **NOT**
+> returned as part of the HTTP request.
 
 ### Parameters
 

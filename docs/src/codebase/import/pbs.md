@@ -32,11 +32,11 @@ We can then join the relevant properties of this
 into a PBScore, where the best parts of the lampPB
 are unioned with the best part of the scorePB.
 
-!!! info
-	A ScorePB refers to a user's best Percent/Score on a chart.
-
-	A PBScore refers to the aforementioned conjoined score
-	document.
+> [!note]
+> A ScorePB refers to a user's best Percent/Score on a chart.
+>
+> A PBScore refers to the aforementioned conjoined score
+> document.
 
 ## Game Specific Things
 

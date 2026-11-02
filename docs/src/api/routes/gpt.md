@@ -20,9 +20,9 @@ None.
 | :------: | :----------: | :----------------------------------------------: |
 | `config` | GamePTConfig | The configuration file for this game + playtype. |
 
-!!! warning
-A GamePTConfig is different to a GameConfig! Read more
-[here](../../codebase/implementation-details/game-configuration.md).
+> [!warning]
+> A GamePTConfig is different to a GameConfig! Read more
+> [here](../../codebase/implementation-details/game-configuration.md).
 
 ### Example
 
@@ -162,13 +162,13 @@ GET /api/v1/games/iidx/SP/songs/1
 | :-----------------: | :----: | :-------------------------: |
 | `search` (Optional) | String | A song title to search for. |
 
-!!! note
-If no search parameter is set, then the most popular
-100 charts for this game are returned.
-
-    If a search parameter is set, then the most popular
-    charts that match the search criteria will be returned,
-    in that order.
+> [!note]
+> If no search parameter is set, then the most popular
+> 100 charts for this game are returned.
+>
+> If a search parameter is set, then the most popular
+> charts that match the search criteria will be returned,
+> in that order.
 
 ### Response
 
@@ -177,10 +177,10 @@ If no search parameter is set, then the most popular
 | `charts` | Array&lt;[ChartDocument](../../schemas/chart.md) with `__playcount`&gt; | The chart documents that matched this search, or the most popular 100 charts for this game. |
 | `songs`  |           Array&lt;[SongDocument](../../schemas/song.md)&gt;            |                        The associated song documents for the charts.                        |
 
-!!! info
-The `__playcount` property is patched onto the chart
-documents returned. This indicates the amount of unique
-players that have played this chart.
+> [!note]
+> The `__playcount` property is patched onto the chart
+> documents returned. This indicates the amount of unique
+> players that have played this chart.
 
 ### Example
 
@@ -431,11 +431,11 @@ GET /api/v1/games/iidx/SP/folders/some_folder_id
 
 `GET /api/v1/games/:gameGroup/:playtype/tables`
 
-!!! note
-Unlike the folders endpoint, this one doesn't have a search parameter. This is because we expect
-the total table count to stay rather small.
-
-    If this changes in the future, this might become a paginated search like endpoint.
+> [!note]
+> Unlike the folders endpoint, this one doesn't have a search parameter. This is because we expect
+> the total table count to stay rather small.
+>
+> If this changes in the future, this might become a paginated search like endpoint.
 
 ### Parameters
 
@@ -575,10 +575,10 @@ GET /api/v1/games/bms/7K/player-distribution?class=stslDan
 }
 ```
 
-!!! info
-You can find the humanised conversions for these classes in the gameConfig for this GPT.
-
-    See [tachi/common](https://github.com/zkldi/Tachi/tree/main/common) for more information.
+> [!note]
+> You can find the humanised conversions for these classes in the gameConfig for this GPT.
+>
+> See [tachi/common](https://github.com/zkldi/Tachi/tree/main/common) for more information.
 
 ---
 

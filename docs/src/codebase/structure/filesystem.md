@@ -3,13 +3,13 @@
 `tachi-server` has a specific setup of files and folders
 to ensure that code is at where it's most sensible.
 
-!!! note
-	This documentation is a rough guide for where
-	to place files if you are writing a new file,
-	or where to look for certain functionality.
-
-	It is not a comprehensive tutorial for every file
-	in the repo, as that would be a pain to keep updated.
+> [!note]
+> This documentation is a rough guide for where
+> to place files if you are writing a new file,
+> or where to look for certain functionality.
+>
+> It is not a comprehensive tutorial for every file
+> in the repo, as that would be a pain to keep updated.
 
 *****
 
@@ -23,8 +23,8 @@ All of the server TypeScript code goes here.
 
 ### `/js`
 
-!!! info
-	This folder is gitignored.
+> [!note]
+> This folder is gitignored.
 
 When compiled, `tsc` will output the JS code here.
 
@@ -47,16 +47,16 @@ This is mainly for things where we want to randomly select
 from the list, and not perform any serious lookups - which
 is why it's a good fit for splash text/automatic session names.
 
-!!! info
-	Selecting a random element from an entire collection
-	in MongoDB is relatively expensive, and would quadruple
-	the time an import takes.
+> [!note]
+> Selecting a random element from an entire collection
+> in MongoDB is relatively expensive, and would quadruple
+> the time an import takes.
 
-!!! warning
-	TypeScript does not support copying over non-code files.
-
-	You can use `cp` in post to move files around, or
-	place the data in memory, either is fine.
+> [!warning]
+> TypeScript does not support copying over non-code files.
+>
+> You can use `cp` in post to move files around, or
+> place the data in memory, either is fine.
 
 ### `/external`
 
@@ -82,8 +82,8 @@ serving our PWA.
 Tachi's tests need mocks and some specialised code in order
 to work well. This folder contains all of those things.
 
-!!! warning
-	**NOTHING** from this folder should be ran in production.
+> [!warning]
+> **NOTHING** from this folder should be ran in production.
 
 ### `/utils`
 

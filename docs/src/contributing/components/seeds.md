@@ -15,8 +15,10 @@ All of the content for this component is inside the `seeds/` folder.
 
 It contains the `collections/` folder, which contains JSON files for their respective databases.
 
-!!! example
-	`collections/songs-iidx.json` will be synced with the `songs-iidx` collection in the database.
+> [!note]
+> **Example:**
+>
+> `collections/songs-iidx.json` will be synced with the `songs-iidx` collection in the database.
 
 The other available folder is `scripts/`.
 This contains a Typescript package for scripting changes to the database seeds, and also contains a script that tests whether the data in the seeds is valid.
@@ -41,8 +43,8 @@ expectedly, define what a song is meant to look like.
 
 We also maintain a bit more human readable form for schemas in this documentation, under the [schemas section](../../schemas).
 
-!!! warning
-	This may be slightly out of sync with the current content. Please report it if it is!
+> [!warning]
+> This may be slightly out of sync with the current content. Please report it if it is!
 
 ## Important Scripts
 
@@ -54,10 +56,10 @@ Before sending any changes, run `just seeds test` to check all your data. If any
 
 This is automatically ran when changes are sent to me, but you should run it yourself before committing anyway!
 
-!!! info
-	Your changes won't be synced with the database if they fail the tests.
-
-	If you're confused about why tests are failing, ask in the discord.
+> [!note]
+> Your changes won't be synced with the database if they fail the tests.
+>
+> If you're confused about why tests are failing, ask in the discord.
 
 ## Rerunners
 
@@ -76,10 +78,10 @@ Some scripts we only want to run once, and we don't really need to keep them aro
 
 You can make quick hacky scripts here.
 
-!!! warning
-	Anything in this folder will *NOT* be shared. Please be generous with what you share,
-	far too many people have assumed nobody is interested in their scripts, and then lost
-	the scripts when moving machines!
+> [!warning]
+> Anything in this folder will *NOT* be shared. Please be generous with what you share,
+> far too many people have assumed nobody is interested in their scripts, and then lost
+> the scripts when moving machines!
 
 ## Scripting Changes
 

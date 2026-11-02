@@ -4,8 +4,8 @@
 
 This is the preferred way of handling authorisation between web applications, as it can be done without the user ever really having to deal with their API keys!
 
-!!! note
-	The below steps assume some familiarity with OAuth2. If you are not familiar, I find [this](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2) to be the best explaination.
+> [!note]
+> The below steps assume some familiarity with OAuth2. If you are not familiar, I find [this](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2) to be the best explaination.
 
 We use an *almost* standard OAuth2 flow, but with the added react-app caveat of POSTing for an intermediate token. If that makes sense to you, you don't need to read this page!
 
@@ -13,8 +13,8 @@ We use an *almost* standard OAuth2 flow, but with the added react-app caveat of 
 
 In this scenario, we have two users, user A, who is making a service that integrates with Tachi, and user B, who wants to link integrate their service with their tachi profile.
 
-!!! info
-	In this example we will use `boku.tachi.ac` as the Tachi site name.
+> [!note]
+> In this example we will use `boku.tachi.ac` as the Tachi site name.
 
 - An OAuth2 client is created by user A.
 

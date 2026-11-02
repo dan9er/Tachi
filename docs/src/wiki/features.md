@@ -32,11 +32,11 @@ two hours between a score is when you're either not playing
 anymore, or taking a significant enough break that you're
 probably no longer warm.
 
-!!! info
-	The reason we use the two-hour rule instead of just
-	splitting on a day is that not everyone lives in the
-	same timezone, and their session may get unexpectedly
-	split in two!
+> [!note]
+> The reason we use the two-hour rule instead of just
+> splitting on a day is that not everyone lives in the
+> same timezone, and their session may get unexpectedly
+> split in two!
 
 ### Why bother?
 
@@ -66,11 +66,11 @@ the same time!
 
 Your IIDX DP score will **not** be added to your SP session.
 
-!!! note
-	For home players, this is likely to not ever be an
-	issue, but for arcade players - where people typically
-	throw a couple credits into different games every day,
-	it can become a problem!
+> [!note]
+> For home players, this is likely to not ever be an
+> issue, but for arcade players - where people typically
+> throw a couple credits into different games every day,
+> it can become a problem!
 
 ### What does this performance statistic mean?
 
@@ -88,8 +88,8 @@ That's it for sessions! As a quick summary:
 
 ## Goals
 
-!!! note
-	This feature goes hand-in-hand with [Quests](#quests).
+> [!note]
+> This feature goes hand-in-hand with [Quests](#quests).
 
 Goals are a built-in way of setting targets for yourself.
 
@@ -123,25 +123,29 @@ The criteria determines what our goal actually is.
 
 You can set goals for Lamps, Grades, Percents and score.
 
-!!! example
-	Get 950'000 on FREEDOM DiVE.
-
-	SS FREEDOM DiVE.
-
-	Clear FREEDOM DiVE
-
-	Get 95% on FREEDOM DiVE.
+> [!note]
+> **Example:**
+>
+> Get 950'000 on FREEDOM DiVE.
+>
+> SS FREEDOM DiVE.
+>
+> Clear FREEDOM DiVE
+>
+> Get 95% on FREEDOM DiVE.
 
 We can also control *how many* scores need to match the
 given criteria. This makes more sense when goals apply
 to more than one chart.
 
-!!! example
-	AAA 50 Charts in the Level 12 folder.
-
-	FULL COMBO 10% of the Level 11 folder.
-
-	Clear either FREEDOM DiVE or Blue Zenith.
+> [!note]
+> **Example:**
+>
+> AAA 50 Charts in the Level 12 folder.
+>
+> FULL COMBO 10% of the Level 11 folder.
+>
+> Clear either FREEDOM DiVE or Blue Zenith.
 
 #### Charts
 
@@ -149,24 +153,30 @@ You can also control what charts your goal applies to.
 
 The most simple option is to only select one chart.
 
-!!! example
-	Full Combo xi - FREEDOM DiVE (FOUR DIMENSIONS)
+> [!note]
+> **Example:**
+>
+> Full Combo xi - FREEDOM DiVE (FOUR DIMENSIONS)
 
 You can also select multiple, fixed charts.
 
-!!! example
-	Full Combo xi - FREEDOM DiVE or NOMA - BRAIN POWER.
-	
-	Get 95% on 2 of the following, FREEDOM DiVE, Elemental Creation, BRAIN POWER or Blue Zenith.
+> [!note]
+> **Example:**
+>
+> Full Combo xi - FREEDOM DiVE or NOMA - BRAIN POWER.
+>
+> Get 95% on 2 of the following, FREEDOM DiVE, Elemental Creation, BRAIN POWER or Blue Zenith.
 
 Alternatively, you can set goals on folders!
 
-!!! example
-	Full combo any chart in the Level 12 folder.
-
-	Clear 50% of the Level 12 folder.
-
-	AAA 100 charts in the Level 12 folder.
+> [!note]
+> **Example:**
+>
+> Full combo any chart in the Level 12 folder.
+>
+> Clear 50% of the Level 12 folder.
+>
+> AAA 100 charts in the Level 12 folder.
 
 ### Summary
 

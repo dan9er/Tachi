@@ -17,9 +17,9 @@ You can report issues on the [GitHub](https://github.com/zkldi/Tachi) repository
 _absolutely no programming knowledge_ on your part. All you have to do is write up a nice summary
 of the bug.
 
-!!! note
-Although they're called GitHub _issues_, they're actually used for tracking anything. If you've
-came up with a cool feature idea, send it over as an issue! `zk` will read and Triage them.
+> [!note]
+> Although they're called GitHub _issues_, they're actually used for tracking anything. If you've
+> came up with a cool feature idea, send it over as an issue! `zk` will read and Triage them.
 
 For more information, read our [Issue Reporting Guide](./components/issues.md).
 
@@ -44,15 +44,15 @@ our GitHub repository! That means you can:
 - Submit your changes back and if they're accepted...
 - They automatically synchronise with the site!
 
-!!! important
-This part of Tachi is the most important part for external contributors.
-You guys know these games better than `zk` does, and you guys keep an eye on all the updates for your games!
-
-    If people don't add songs/charts to this database, `zk` will **not** keep an eye on the game for you! Someone *has* to pick up the reigns for each game!
-
-    If you want to add/fix songs, charts, folders or tables for your favourite game - **START HERE!**
-
-    Or in general, if you just want to contribute and don't know what to -- **this is the MOST in need of help. Always.**
+> [!important]
+> This part of Tachi is the most important part for external contributors.
+> You guys know these games better than `zk` does, and you guys keep an eye on all the updates for your games!
+>
+> If people don't add songs/charts to this database, `zk` will **not** keep an eye on the game for you! Someone *has* to pick up the reigns for each game!
+>
+> If you want to add/fix songs, charts, folders or tables for your favourite game - **START HERE!**
+>
+> Or in general, if you just want to contribute and don't know what to -- **this is the MOST in need of help. Always.**
 
 Want to get started on contributing to the Database? Check out our [Database Contribution Guide](./components/seeds.md).
 
@@ -64,11 +64,11 @@ The server handles all of our logic -- How do we get scores, where should scores
 
 The client tries to then place a slick UI over that logic and its exposed API.
 
-!!! warning
-Tachi's core is not an amazingly complex beast, but it is _not_ going to be reasonably followable
-with not a lot of programming experience. You'll need some background in programming to be able to do almost anything in this area.
-
-    That said, we still have a thorough guide -- It's not *from 0*, but it is *from some programming knowledge*.
+> [!warning]
+> Tachi's core is not an amazingly complex beast, but it is _not_ going to be reasonably followable
+> with not a lot of programming experience. You'll need some background in programming to be able to do almost anything in this area.
+>
+> That said, we still have a thorough guide -- It's not *from 0*, but it is *from some programming knowledge*.
 
 Want to get started on contributing to the Core? Check out our [Core Contribution Guide](./components/core.md).
 

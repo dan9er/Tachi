@@ -43,11 +43,11 @@ score-import-main, which means it can be really whatever
 it wants to be, and draw data from whatever source it needs
 to.
 
-!!! warning
-	Parser functions return more than just an iterable,
-	but in the interest of introducing complexity slowly
-	we're going to pretend that they only return an
-	iterable for now.
+> [!warning]
+> Parser functions return more than just an iterable,
+> but in the interest of introducing complexity slowly
+> we're going to pretend that they only return an
+> iterable for now.
 
 ### Implementation
 
@@ -102,8 +102,8 @@ score import function.
 The iterable returned by the parser should be in the
 most immediately sensible format.
 
-!!! info
-	Parser Functions may be asynchronous.
+> [!note]
+> Parser Functions may be asynchronous.
 
 ### Iterable Vs. Array
 
@@ -221,10 +221,10 @@ accordingly.
 The classHandler returned from the parser should be a callable function
 that will update the user's classes dependent on this data.
 
-!!! info
-	If no class information is dependent on the content
-	known by the parser function, then `classHandler`
-	can be set to null, and it will not be called.
+> [!note]
+> If no class information is dependent on the content
+> known by the parser function, then `classHandler`
+> can be set to null, and it will not be called.
 
 ### Final Example
 

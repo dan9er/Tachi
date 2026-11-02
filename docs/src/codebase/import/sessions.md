@@ -45,11 +45,13 @@ this is dependent on the game + playtype being used.
 If a score within 2 hours of an existing session,
 then that score is appended to the session.
 
-!!! bug
-	Sessions do not currently conjoin if a user was to
-	get a score between two sessions such that
-	there was now less than two hours between the first
-	sessions last score and the second sessions first score.
-
-	This is so difficult to properly resolve that Tachi simply
-	makes no attempt to stop it.
+> [!note]
+> **Bug:**
+>
+> Sessions do not currently conjoin if a user was to
+> get a score between two sessions such that
+> there was now less than two hours between the first
+> sessions last score and the second sessions first score.
+>
+> This is so difficult to properly resolve that Tachi simply
+> makes no attempt to stop it.

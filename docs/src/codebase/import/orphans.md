@@ -23,11 +23,11 @@ If it results in a SongOrChartNotFoundFailure, we do nothing.
 
 If it results in a success, we have a new DryScore we can import.
 
-!!! info
-	If another type of failure occurs - i.e. InvalidScoreFailure,
-	then we remove the orphaned score from the DB.
+> [!note]
+> If another type of failure occurs - i.e. InvalidScoreFailure,
+> then we remove the orphaned score from the DB.
 
-!!! note
-	This is why Converter Functions are completely
-	static, so we can safely call the same Converter
-	Function with this data to unorphan scores.
+> [!note]
+> This is why Converter Functions are completely
+> static, so we can safely call the same Converter
+> Function with this data to unorphan scores.

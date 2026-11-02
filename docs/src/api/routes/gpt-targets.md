@@ -10,10 +10,10 @@ For user-specific target endpoints, such as subscriptions, see [UGPT-Target Endp
 
 `GET /api/v1/games/:gameGroup/:playtype/targets/recently-achieved`
 
-!!! info
-This endpoint returns the 100 most recently achieved goal subscriptions, and 50 most recently achieved quest subscriptions.
-
-    A target is not considered recently achieved if it was [instantly achieved](../../codebase/implementation-details/goals-quests.md#instant-indirect-achievements).
+> [!note]
+> This endpoint returns the 100 most recently achieved goal subscriptions, and 50 most recently achieved quest subscriptions.
+>
+> A target is not considered recently achieved if it was [instantly achieved](../../codebase/implementation-details/goals-quests.md#instant-indirect-achievements).
 
 ### Parameters
 
@@ -71,13 +71,13 @@ GET /api/v1/games/iidx/SP/targets/recently-achieved
 
 `GET /api/v1/games/:gameGroup/:playtype/targets/recently-raised`
 
-!!! info
-This endpoint returns the 100 most recently interacted-with goal subscriptions, and 50 most recently interacted-with quest subscriptions.
+> [!note]
+> This endpoint returns the 100 most recently interacted-with goal subscriptions, and 50 most recently interacted-with quest subscriptions.
+>
+> A recently interacted with target subscription is one where `progress` or `outOf` has changed recently.
 
-    A recently interacted with target subscription is one where `progress` or `outOf` has changed recently.
-
-!!! warn
-This endpoint excludes achieved targets -- targets still get interacted with when achieved, which means a user with a lot of targets will just flood this endpoint with redundant updates on larger imports.
+> [!warning]
+> This endpoint excludes achieved targets -- targets still get interacted with when achieved, which means a user with a lot of targets will just flood this endpoint with redundant updates on larger imports.
 
 ### Parameters
 
@@ -195,12 +195,12 @@ None.
 
 `GET /api/v1/games/:gameGroup/:playtype/targets/goals/:goalID/evaluate-for`
 
-!!! note
-This endpoint is notably in a bit of a strange position. It can't go under UGPT because
-`UGPT/goals/:goalID` is for goal subscriptions, and overloading the endpoint to be
-something like "return the goal subscription or evaluate it if doesn't exist" is ugly.
-
-    As such, it ends up here, but is generally a bit awkward.
+> [!note]
+> This endpoint is notably in a bit of a strange position. It can't go under UGPT because
+> `UGPT/goals/:goalID` is for goal subscriptions, and overloading the endpoint to be
+> something like "return the goal subscription or evaluate it if doesn't exist" is ugly.
+>
+> As such, it ends up here, but is generally a bit awkward.
 
 ### Parameters
 
@@ -220,8 +220,8 @@ something like "return the goal subscription or evaluate it if doesn't exist" is
 |     `results.outOf`     |   Integer    |               What this goal was out of.                |
 |  `results.outOfHuman`   |    String    |  A user friendly format for what this goal was out of.  |
 
-!!! info
-For more info on `progress`/`outOf`, see [Goals](../../codebase/implementation-details/goals-quests.md#evaluating-a-users-progress).
+> [!note]
+> For more info on `progress`/`outOf`, see [Goals](../../codebase/implementation-details/goals-quests.md#evaluating-a-users-progress).
 
 ### Example
 
@@ -261,12 +261,12 @@ GET /api/v1/games/iidx/SP/targets/goals/some_goal_id/evaluate-for?userID=zkldi
 
 `GET /api/v1/games/:gameGroup/:playtype/targets/quests`
 
-!!! note
-You might notice that there's no equivalent endpoint for goals.
-
-    Searching goals for a GPT isn't very interesting, since they can be created by anyone at any time. The only reason goals are stored separately to subscriptions are for deduplication purposes and quests.
-
-    As such, searching goals for a GPT is pointless, since technically it should search the set of all possible goals.
+> [!note]
+> You might notice that there's no equivalent endpoint for goals.
+>
+> Searching goals for a GPT isn't very interesting, since they can be created by anyone at any time. The only reason goals are stored separately to subscriptions are for deduplication purposes and quests.
+>
+> As such, searching goals for a GPT is pointless, since technically it should search the set of all possible goals.
 
 ### Parameters
 

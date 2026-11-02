@@ -10,10 +10,10 @@ These endpoints are related to a users integrations with external services.
 
 **Kamaitachi Only**
 
-!!! note
-	A KaiType is either "flo", "min", or "eag". Since these three services
-	share backends, they all use the same authentication mechanisms, and share
-	endpoints like this.
+> [!note]
+> A KaiType is either "flo", "min", or "eag". Since these three services
+> share backends, they all use the same authentication mechanisms, and share
+> endpoints like this.
 
 ### Permissions
 
@@ -49,10 +49,10 @@ GET /api/v1/users/1/integrations/kai/flo
 
 **Kamaitachi Only**
 
-!!! note
-	A KaiType is either "flo", "min", or "eag". Since these three services
-	share backends, they all use the same authentication mechanisms, and share
-	endpoints like this.
+> [!note]
+> A KaiType is either "flo", "min", or "eag". Since these three services
+> share backends, they all use the same authentication mechanisms, and share
+> endpoints like this.
 
 ### Permissions
 
@@ -74,11 +74,11 @@ Empty Object.
 
 **Kamaitachi Only**
 
-!!! info
-	This is used as part of an [OAuth2 Flow](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2).
-
-	The client controls the callback link after authentication with the service, and then POSTs the returned `code` to us.
-	This part of the flow actually updates the user.
+> [!note]
+> This is used as part of an [OAuth2 Flow](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2).
+>
+> The client controls the callback link after authentication with the service, and then POSTs the returned `code` to us.
+> This part of the flow actually updates the user.
 
 ### Permissions
 

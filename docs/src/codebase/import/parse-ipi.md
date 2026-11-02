@@ -7,11 +7,11 @@ in what it has to say, though.
 This step converts that array into data we use
 in successive score import steps.
 
-!!! info
-	Because the logic for this is essentially just one
-	loop, it does not get its own file in `score-importing/`.
-
-	Instead, it is defined inside `score-import-main.ts`.
+> [!note]
+> Because the logic for this is essentially just one
+> loop, it does not get its own file in `score-importing/`.
+>
+> Instead, it is defined inside `score-import-main.ts`.
 
 *****
 

@@ -14,18 +14,18 @@ that results in invalid scores ending up on your profile
 is OK, but if they repeatedly happen in your favour, you
 may be warned.
 
-!!! warning
-	Cheating on Tachi is very easy. With a basic
-	amount of programming knowledge you could fake
-	scores.
-
-	There is no anti-cheat in this regard, and this
-	is deliberately so.
-
-	As such, this rule is enforced **incredibly** strictly.
-
-	You do not get a second chance. If you fake scores, you
-	revoke all access to the tracker.
+> [!warning]
+> Cheating on Tachi is very easy. With a basic
+> amount of programming knowledge you could fake
+> scores.
+>
+> There is no anti-cheat in this regard, and this
+> is deliberately so.
+>
+> As such, this rule is enforced **incredibly** strictly.
+>
+> You do not get a second chance. If you fake scores, you
+> revoke all access to the tracker.
 
 ## R2: You **MUST NOT** play on invalid input devices.
 
@@ -67,8 +67,8 @@ The valid input devices are listed below.
 | PMS (Controller) | Any arcade-size controller | The controller leaderboards are **exclusively** for arcade **SIZE** controllers. **MINI POP'N CONTROLLERS DO NOT COUNT AS ARCADE SIZE CONTROLLERS.** |  
 | PMS (Keyboard) | Keyboard | The keyboard leaderboards are **exclusively** for keyboard players. You must not play on these leaderboards with a controller! |  
 
-!!! info
-	As always though, exercise some common sense. I'm not going to whitelist controllers on here, because that's asking for trouble. Use your head as for whether something is fair or not, and if you're not certain still, ask in the discord.
+> [!note]
+> As always though, exercise some common sense. I'm not going to whitelist controllers on here, because that's asking for trouble. Use your head as for whether something is fair or not, and if you're not certain still, ask in the discord.
 
 ## R3: You are only allowed one account.
 

@@ -48,5 +48,5 @@ GET /api/v1/search?search=freedom
 }
 ```
 
-!!! info
-	For more details on how searching works, see [Search Implementation](../../codebase/implementation-details/search.md).
+> [!note]
+> For more details on how searching works, see [Search Implementation](../../codebase/implementation-details/search.md).

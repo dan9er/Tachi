@@ -27,10 +27,10 @@ appropriate way to send files.
 | :: | :: |
 | `X-User-Intent` (optional) | If this header is "true", the request is assumed to have been sent with 'User Intent'. For more on this, see [Import Types](../../codebase/import/import-types.md) |
 
-!!! info
-	It's the responsibility of the API user to use the X-User-Intent
-	header properly. It should only be used when the user
-	has explicitly requested this import (i.e. not sent by an automated script).
+> [!note]
+> It's the responsibility of the API user to use the X-User-Intent
+> header properly. It should only be used when the user
+> has explicitly requested this import (i.e. not sent by an automated script).
 
 ### Response
 
@@ -116,8 +116,8 @@ scoreData=<file data>
 This endpoint requests scores from an API to sync up with the requesting user's profile. This can
 be performed programmatically, as long as the key has `submit_score` permissions.
 
-!!! note
-	The user must configure integration with these services up.
+> [!note]
+> The user must configure integration with these services up.
 
 ### Permissions
 
@@ -176,9 +176,9 @@ See previous example.
 
 This endpoint goes through all of the requesting user's [Orphanned Scores](../../codebase/import/orphans.md) and attempts to find them a parent song & chart.
 
-!!! note
-	Scores automatically attempt de-orphaning every day at 1 AM UTC on Kamaitachi and Bokutachi,
-	this endpoint just allows you to force a deorphaning, should you wish to.
+> [!note]
+> Scores automatically attempt de-orphaning every day at 1 AM UTC on Kamaitachi and Bokutachi,
+> this endpoint just allows you to force a deorphaning, should you wish to.
 
 ### Permissions
 

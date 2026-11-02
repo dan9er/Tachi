@@ -3,10 +3,10 @@
 We have a script that already exists for parsing a `music_db.xml` file and merging it with the database seeds.
 This is convenient for when you want to provide an update for SDVX based off data you have.
 
-!!! important
-	You need to have a working setup of Tachi to use this script.
-
-	For instructions on how to do that, see [Tachi Setup](../setup.md).
+> [!important]
+> You need to have a working setup of Tachi to use this script.
+>
+> For instructions on how to do that, see [Tachi Setup](../setup.md).
 
 ## How to use
 

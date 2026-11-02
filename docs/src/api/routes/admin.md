@@ -107,10 +107,10 @@ POST /api/v1/admin/recalc-pbs
 
 `POST /api/v1/admin/destroy-ugpt`
 
-!!! warning
-	This is intended to completely remove a users GPT profile.
-	You should use this **only** if a user has irrevocably screwed
-	their account. Preferably early on!
+> [!warning]
+> This is intended to completely remove a users GPT profile.
+> You should use this **only** if a user has irrevocably screwed
+> their account. Preferably early on!
 
 ### Permissions
 

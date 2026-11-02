@@ -6,11 +6,11 @@ This part of the score importing process updates those
 overarching statistics, such as their profile rating
 and their classes.
 
-!!! note
-	If a user has never played this game + playtype
-	combination before, a new user game stats
-	object is saved to the database as a result
-	of this update.
+> [!note]
+> If a user has never played this game + playtype
+> combination before, a new user game stats
+> object is saved to the database as a result
+> of this update.
 
 *****
 

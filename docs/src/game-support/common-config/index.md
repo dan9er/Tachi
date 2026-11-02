@@ -20,8 +20,8 @@ The game part - in this case `iidx` - defines things that are shared between all
 
 Whereas the game + playtype (typically shortened to GPT) is the part that contains almost all of the actual configuration. This distinction will become more obvious when you see the difference in size between the two configs.
 
-!!! note
-	I picked the shorthand `GPT` before ChatGPT et. al. blew up. Ah well.
+> [!note]
+> I picked the shorthand `GPT` before ChatGPT et. al. blew up. Ah well.
 
 ## Game Configurations
 
@@ -38,18 +38,18 @@ export const IIDX_CONF = {
 } as const satisfies INTERNAL_GAME_CONFIG;
 ```
 
-!!! note
-	`game` in Tachi is a bit of an unfortunate name. While - intuitively - most people
-	will think of the game as the important part, `game` in Tachi functions more like
-	a "grouping" of playtypes.
-
-	Our IIDX game contains two playtypes - SP and DP, these are implemented almost
-	entirely separately -- SP and DP could have entirely different calculations if they
-	wanted!
-
-	Things should be grouped together if the songs involved in the game can have
-	multiple charts across-playtypes. Since songs in IIDX can have SP and DP difficulties,
-	they share a `game`!
+> [!note]
+> `game` in Tachi is a bit of an unfortunate name. While - intuitively - most people
+> will think of the game as the important part, `game` in Tachi functions more like
+> a "grouping" of playtypes.
+>
+> Our IIDX game contains two playtypes - SP and DP, these are implemented almost
+> entirely separately -- SP and DP could have entirely different calculations if they
+> wanted!
+>
+> Things should be grouped together if the songs involved in the game can have
+> multiple charts across-playtypes. Since songs in IIDX can have SP and DP difficulties,
+> they share a `game`!
 
 ### `name`
 
@@ -59,8 +59,10 @@ This is the name for the game that will be displayed to end users. This should b
 
 The list of playtypes this game supports. For games that only have one playtype (and likely will never have another), "Single" is typically used.
 
-!!! example
-	For SDVX, we use `playtypes: ["Single"]`. Since SDVX doesn't normally have any sort of separate playtypes.
+> [!note]
+> **Example:**
+>
+> For SDVX, we use `playtypes: ["Single"]`. Since SDVX doesn't normally have any sort of separate playtypes.
 
 ### `songData`
 
@@ -70,24 +72,26 @@ This is written as a [Zod](https://github.com/colinhacks/zod) schema, which allo
 
 This game-specific information is stored on the `data` field of a song.
 
-!!! example
-	Here's an example IIDX song:
-
-	```json
-	{
-		"altTitles": [],
-		"artist": "dj nagureo",
-		"data": {
-			"displayVersion": "1",
-			"genre": "PIANO AMBIENT"
-		},
-		"id": 1,
-		"searchTerms": [],
-		"title": "5.1.1."
-	},
-	```
-
-	Note the `data` field, which allows for game-specific metadata.
+> [!note]
+> **Example:**
+>
+> Here's an example IIDX song:
+>
+> ```json
+> {
+> 	"altTitles": [],
+> 	"artist": "dj nagureo",
+> 	"data": {
+> 		"displayVersion": "1",
+> 		"genre": "PIANO AMBIENT"
+> 	},
+> 	"id": 1,
+> 	"searchTerms": [],
+> 	"title": "5.1.1."
+> },
+> ```
+>
+> Note the `data` field, which allows for game-specific metadata.
 
 ## GPT Configurations
 
@@ -95,8 +99,8 @@ This is the *real* meat-and-potatoes for implementing something for Tachi.
 
 Here is our actual implementation for WACCA's Single playtype.
 
-!!! note
-	WACCA only has one playtype - "Single".
+> [!note]
+> WACCA only has one playtype - "Single".
 
 ```ts
 export const WACCA_SINGLE_CONF = {
@@ -222,14 +226,16 @@ to be a `GRAPH` or `NULLABLE_GRAPH` metric, as those are not sanely comparable.
 If the user has no preferences overriding this, what should this GPT default to showing
 when showing enum graphs?
 
-!!! example
-	![](../images/../../images/default-enum.png)
+> [!note]
+> **Example:**
+>
+> ![](../images/../../images/default-enum.png)
+> 
+> Here, we see that the site has picked lamps by default to show. This is because
+> the default enum for IIDX is `lamp`.
 
-	Here, we see that the site has picked lamps by default to show. This is because
-	the default enum for IIDX is `lamp`.
-
-!!! note
-	Users may override this preference in their settings for this GPT.
+> [!note]
+> Users may override this preference in their settings for this GPT.
 
 ## Score, Session, Profile Rating Algorithms
 
@@ -262,20 +268,22 @@ a fixed config likely makes more sense.
 With a fixed config, you define the `order:` in which these difficulties appear in,a default difficulty to redirect to if the song is selected in the search bar and
 optionally, some shorthand (generally for mobile view).
 
-!!! example
-	```ts
-	difficulties: {
-		type: "FIXED",
-		order: ["NORMAL", "HARD", "EXPERT", "INFERNO"],
-		shorthand: {
-			NORMAL: "NRM",
-			HARD: "HRD",
-			EXPERT: "EXP",
-			INFERNO: "INF",
-		},
-		default: "EXPERT",
-	}
-	```
+> [!note]
+> **Example:**
+>
+> ```ts
+> difficulties: {
+> 	type: "FIXED",
+> 	order: ["NORMAL", "HARD", "EXPERT", "INFERNO"],
+> 	shorthand: {
+> 		NORMAL: "NRM",
+> 		HARD: "HRD",
+> 		EXPERT: "EXP",
+> 		INFERNO: "INF",
+> 	},
+> 	default: "EXPERT",
+> }
+> ```
 
 ## Classes
 
@@ -289,28 +297,32 @@ There are two types of classes:
 
 In which the value of the class is derived from the user's profile metrics.
 
-!!! example
-	A common example of this would be things like `colour` rankings in konami arcade
-	games. These are cutoffs like `>1500 jubility = ORANGE, >2000 jubility = GREEN`.
+> [!note]
+> **Example:**
+>
+> A common example of this would be things like `colour` rankings in konami arcade
+> games. These are cutoffs like `>1500 jubility = ORANGE, >2000 jubility = GREEN`.
 
 ### "PROVIDED"
 
 In which the value of the class is provided by a score import somehow.
 
-!!! example
-	A common example of this would be things like dans. These are not functions
-	of existing state, and must be stated in an import method.
+> [!note]
+> **Example:**
+>
+> A common example of this would be things like dans. These are not functions
+> of existing state, and must be stated in an import method.
 
-!!! note
-	"DERIVED" classes are allowed to go back down - if the deriving implementation
-	says the class is now worse, the class the user has will decrease.
-
-	However, "PROVIDED" classes cannot be superceded by worse ones - if the user was
-	10th dan and then cleared 3rd dan, their dan will *not* be overwritten. The only
-	way for a "PROVIDED" class to go down is to contact an admin at the moment.
-
-	Maybe the in the future, users could have the ability to manually wipe their own
-	classes, in-case they corrupt their profile.
+> [!note]
+> "DERIVED" classes are allowed to go back down - if the deriving implementation
+> says the class is now worse, the class the user has will decrease.
+>
+> However, "PROVIDED" classes cannot be superceded by worse ones - if the user was
+> 10th dan and then cleared 3rd dan, their dan will *not* be overwritten. The only
+> way for a "PROVIDED" class to go down is to contact an admin at the moment.
+>
+> Maybe the in the future, users could have the ability to manually wipe their own
+> classes, in-case they corrupt their profile.
 
 ## `orderedJudgements`
 
@@ -328,76 +340,80 @@ For example, in IIDX we *need* to store the `notecount` of a chart somewhere (it
 
 The `chartData` field is a [Zod](https://github.com/colinhacks/zod) schema indicating the structure of this additional information.
 
-!!! example
-	```ts
-	chartData: z.strictObject({
-		inGameID: z.number().int().nonnegative(),
-		clearTier: z.strictObject({
-			value: z.number(),
-			text: z.string(),
-			individualDifference: z.boolean(),
-		}).nullable(),
-	}),
-	```
-
-	declares that a chart for this GPT should look like:
-
-	```ts
-	{
-		"chartID": "5088a4d0e1ee9d0cc2f625934306e45b1a60699b",
-		"data": {
-			"inGameID": 1,
-			"clearTier": { value: 12.5, text: "12C", individualDifference: false }
-		},
-		"difficulty": "ADV",
-		"isPrimary": true,
-		"level": "10",
-		"levelNum": 10,
-		"playtype": "Single",
-		"songID": 1,
-		"versions": ["exceed", "konaste"]
-	},
-	```
-
-	Note the GPT-specific properties in the `data` field now.
+> [!note]
+> **Example:**
+>
+> ```ts
+> chartData: z.strictObject({
+> 	inGameID: z.number().int().nonnegative(),
+> 	clearTier: z.strictObject({
+> 		value: z.number(),
+> 		text: z.string(),
+> 		individualDifference: z.boolean(),
+> 	}).nullable(),
+> }),
+> ```
+>
+> declares that a chart for this GPT should look like:
+>
+> ```ts
+> {
+> 	"chartID": "5088a4d0e1ee9d0cc2f625934306e45b1a60699b",
+> 	"data": {
+> 		"inGameID": 1,
+> 		"clearTier": { value: 12.5, text: "12C", individualDifference: false }
+> 	},
+> 	"difficulty": "ADV",
+> 	"isPrimary": true,
+> 	"level": "10",
+> 	"levelNum": 10,
+> 	"playtype": "Single",
+> 	"songID": 1,
+> 	"versions": ["exceed", "konaste"]
+> },
+> ```
+>
+> Note the GPT-specific properties in the `data` field now.
 
 ## Preferences
 
 If this GPT should have specific preferences (for BMS, you can set a list of tables you don't want to see, for example), list them here as a Zod schema.
 
-!!! example
-	A `preferences` of 
-
-	```ts
-	preferences: z.strictObject({ showCustomCharts: z.boolean() })
-	```
-
-	corresponds to a settings document of:
-	```ts
-	[
-		{
-			"userID": 1,
-			"game": "iidx",
-			"playtype": "SP",
-			"preferences": {
-				"preferredScoreAlg": null,
-				"preferredSessionAlg": null,
-				"preferredProfileAlg": null,
-				"preferredDefaultEnum": null,
-				"defaultTable": null,
-				"preferredRanking": null,
-				"stats": [],
-				"gameSpecific": {
-					"showCustomCharts": false
-				}
-			},
-			"rivals": []
-		}
-	]
-	```
-
-	Note the `preferences.gameSpecific` part, which holds these game-specific
-	preferences.
+> [!note]
+> **Example:**
+>
+> A `preferences` of 
+>
+> ```ts
+> preferences: z.strictObject({ showCustomCharts: z.boolean() })
+> ```
+>
+> corresponds to a settings document of:
+> ```ts
+> [
+> 	{
+> 		"userID": 1,
+> 		"game": "iidx",
+> 		"playtype": "SP",
+> 		"preferences": {
+> 			"preferredScoreAlg": null,
+> 			"preferredSessionAlg": null,
+> 			"preferredProfileAlg": null,
+> 			"preferredDefaultEnum": null,
+> 			"defaultTable": null,
+> 			"preferredRanking": null,
+> 			"stats": [],
+> 			"gameSpecific": {
+> 				"showCustomCharts": false
+> 			}
+> 		},
+> 		"rivals": []
+> 	}
+> ]
+> ```
+>
+> Note the `preferences.gameSpecific` part, which holds these game-specific
+> preferences.
 
 ## Score Metadata
 
@@ -406,12 +422,12 @@ Sometimes, we want to store stuff about a score that isn't really related to a m
 A common example of this would be something like the mods the player was using - were
 they using RANDOM, MIRROR, etc?
 
-!!! note
-	Score Metadata **DOES NOT** appear on PBs. This metadata is *specific* to the score
-	itself, and would never make sense to merge.
-
-	If a PB is comprised of a best score using RANDOM, and a best lamp using MIRROR,
-	what should the PB merge to? It doesn't make any sense as an operation.
+> [!note]
+> Score Metadata **DOES NOT** appear on PBs. This metadata is *specific* to the score
+> itself, and would never make sense to merge.
+>
+> If a PB is comprised of a best score using RANDOM, and a best lamp using MIRROR,
+> what should the PB merge to? It doesn't make any sense as an operation.
 
 This, similarly, is a Zod schema, and appears on a score documents `scoreMeta` field.
 

@@ -24,9 +24,9 @@ The format is incredibly simple JSON.
 
 It is comprised of two base keys, `meta` and `scores`.
 
-!!! note
-	These keys were originally called `head` and `body` in Kamaitachi. You will have to update
-	existing batch-manual code.
+> [!note]
+> These keys were originally called `head` and `body` in Kamaitachi. You will have to update
+> existing batch-manual code.
 
 ### Meta
 
@@ -82,12 +82,12 @@ The properties are described as this:
 | `optional` (Optional) | See [Game Specific Optional Metrics](../../schemas/score.md#game-specific) | Any optional metrics you wish to provide for this game. |
 | `scoreMeta` (Optional) | See [Game Specific Score Meta](../../schemas/score.md#game-specific) | This can be a partial record of various `scoreMeta` props for this game. |
 
-!!! warning
-	`identifier` should always be a string. Even if it's something like a numeric ID! Tachi will handle this.
+> [!warning]
+> `identifier` should always be a string. Even if it's something like a numeric ID! Tachi will handle this.
 
-!!! warning
-	`timeAchieved` is in **UNIX MILLISECONDS**. Most programming languages use unix seconds. You might have to
-	multiply your timestamps by 1000.
+> [!warning]
+> `timeAchieved` is in **UNIX MILLISECONDS**. Most programming languages use unix seconds. You might have to
+> multiply your timestamps by 1000.
 
 #### Match Type
 

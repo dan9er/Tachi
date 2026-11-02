@@ -9,8 +9,10 @@ Although these features are fairly straightforward on the surface, their impleme
 
 A goal is a set of instructions that are evaluated for a player if they are subscribed to it (and it is relevant to their current import, see [Getting Relevant Goals](../import/goals.md)).
 
-!!! example
-	An example goal would be something like "AAA 100 charts in the X Folder".
+> [!note]
+> **Example:**
+>
+> An example goal would be something like "AAA 100 charts in the X Folder".
 
 Users must subscribe to goals for them to be evaluated when they import scores. This is
 abstracted away from the user, as the operation to create a goal will automatically subscribe
@@ -46,18 +48,18 @@ Both of these values are numbers, and are not intended for human consumption. Fo
 
 For human representation, these values are formatted and stored in the Goal Subscription Document as `progressHuman` and `outOfHuman`, respectively. These values are prettified for human users, and leverage game-specific formatting in some cases.
 
-!!! note
-	Achieved goals are still calculated -- a user may actually find themselves un-achieving goals in some stranger cases.
+> [!note]
+> Achieved goals are still calculated -- a user may actually find themselves un-achieving goals in some stranger cases.
+>
+> If their goal is something like AAA 10% of a folder, and the folder gets larger, they
+> may find themselves losing the achieved status on this goal.
 
-	If their goal is something like AAA 10% of a folder, and the folder gets larger, they
-	may find themselves losing the achieved status on this goal.
+> [!warning]
+> Goal Subscriptions are capped by the MAX_GOAL_SUBSCRIPTIONS [conf.json5](../setup/config.md) property, and defaults to 1000.
 
-!!! warning
-	Goal Subscriptions are capped by the MAX_GOAL_SUBSCRIPTIONS [conf.json5](../setup/config.md) property, and defaults to 1000.
-
-!!! danger
-	Unsubscribing from goals directly is only possible if they do not have any parent quests.
-	More on that below.
+> [!caution]
+> Unsubscribing from goals directly is only possible if they do not have any parent quests.
+> More on that below.
 
 ## What is a Quest?
 

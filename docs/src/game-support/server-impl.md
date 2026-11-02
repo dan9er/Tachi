@@ -19,35 +19,39 @@ These functions should return a string on error, and true on success. This is al
 with how [Prudence](https://github.com/zkldi/Prudence) works, so you can re-use prudence
 functions here.
 
-!!! example
-```ts
-musicRate: (rate, chart) => {
-switch (chart.difficulty) {
-case "BSC":
-case "ADV":
-case "EXT":
-return p.isBetween(0, 100)(rate);
-
-    		case "HARD BSC":
-    		case "HARD ADV":
-    		case "HARD EXT":
-    			return p.isBetween(0, 120)(rate);
-    	}
-    },
-    ```
+> [!note]
+> **Example:**
+>
+> ```ts
+> musicRate: (rate, chart) => {
+> 	switch (chart.difficulty) {
+> 		case "BSC":
+> 		case "ADV":
+> 		case "EXT":
+> 			return p.isBetween(0, 100)(rate);
+>
+> 		case "HARD BSC":
+> 		case "HARD ADV":
+> 		case "HARD EXT":
+> 			return p.isBetween(0, 120)(rate);
+>	}
+> },
+> ```
 
 ## `scoreDeriver`
 
 Any derived metrics you declared are produced by a single function
 `(scoreData, chart) => derivedMetrics` that returns all derived fields at once.
 
-!!! example
-```ts
-(scoreData, chart) => ({
-	percent: (100 * scoreData.score) / (chart.data.notecount * 2),
-	grade: GetGrade(G, scoreData.score),
-});
-```
+> [!note]
+> **Example:**
+>
+> ```ts
+> (scoreData, chart) => ({
+> 	percent: (100 * scoreData.score) / (chart.data.notecount * 2),
+> 	grade: GetGrade(G, scoreData.score),
+> });
+> ```
 
 ## `scoreCalcs`, `sessionCalcs`, `profileCalcs`
 
@@ -130,9 +134,11 @@ the function will simply not be called.
 As mentioned above, the chain of PB functions starts by plucking the best score this
 user has on this chart under the `defaultMetric`. What should we call that score?
 
-!!! example
-For IIDX, this is "Best Score". For something like GITADORA, which only has percent,
-this might be called "Best Percent".
+> [!note]
+> **Example:**
+>
+> For IIDX, this is "Best Score". For something like GITADORA, which only has percent,
+> this might be called "Best Percent".
 
 ## `scoreValidators`
 

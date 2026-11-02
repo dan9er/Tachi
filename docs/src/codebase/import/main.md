@@ -31,15 +31,15 @@ is split into multiple steps. These steps may split into
 further sub-steps, depending on how much occurs in said
 step.
 
-!!! tip
-	These steps are also commented inline in
-	`score-import-main.ts`.
+> [!tip]
+> These steps are also commented inline in
+> `score-import-main.ts`.
 
-!!! warning
-	These steps are only an outline of the process!
-	
-	For more information on each specific step, links
-	are given.
+> [!warning]
+> These steps are only an outline of the process!
+>
+> For more information on each specific step, links
+> are given.
 
 ### Setup
 
@@ -69,9 +69,9 @@ import involved, and the set of scores that were imported.
 - Full Page (Converting): [Parsing and Converting](./parse-conv.md)
 - Full Page (Importing): [Importing](./importing.md)
 
-!!! info
-	This step does most of the work, and is where a
-	lot of our complexity lies.
+> [!note]
+> This step does most of the work, and is where a
+> lot of our complexity lies.
 
 ### Parse Import Info
 
@@ -113,10 +113,10 @@ game stats for them.
 The update is performed by recalculating their statistics
 with the new scores inserted.
 
-!!! info
-	This section is referred to as UGS sometimes internally.
-
-	This is short for User Game Stats.
+> [!note]
+> This section is referred to as UGS sometimes internally.
+>
+> This is short for User Game Stats.
 
 - Full Page: [User Game Stats](./ugs.md)
 

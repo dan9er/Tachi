@@ -57,8 +57,8 @@ just anothers with the special quantifier that the song title ended in † or �
 To handle this, Tachi will automatically convert song titles ending in † or †LEGGENDARIA
 into their original form, changing the difficulty from ANOTHER to LEGGENDARIA.
 
-!!! note
-	This only applies to legacy imports -- This has been fixed since IIDX 27 (2019).
+> [!note]
+> This only applies to legacy imports -- This has been fixed since IIDX 27 (2019).
 
 ## Deduplication False Positives (All Games)
 
@@ -66,14 +66,16 @@ Tachi identifies scores using a `scoreID`. This is calculated from some properti
 
 `scoreID`s are *unique* across all of Tachi. The motivation for this is to avoid score duplication.
 
-!!! example
-	Let's say you imported your local score database, which has some scores in it.
-	You then get some more scores, and import your local score database.
-	
-	What you *want* to happen here is that your new scores get imported and the old ones are just ignored.
-
-	Therefore, we need a way of recognising that a score has already been imported, and ignore
-	it.
+> [!note]
+> **Example:**
+>
+> Let's say you imported your local score database, which has some scores in it.
+> You then get some more scores, and import your local score database.
+> 
+> What you *want* to happen here is that your new scores get imported and the old ones are just ignored.
+>
+> Therefore, we need a way of recognising that a score has already been imported, and ignore
+> it.
 
 To deduplicate scores, we compare scoreIDs. This works in all scenarios, and avoiding score duplication is a good thing. *However*, it has a false positive in exactly one scenario.
 

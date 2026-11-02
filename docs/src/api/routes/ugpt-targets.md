@@ -32,8 +32,8 @@ None.
 
 `GET /api/v1/users/:userID/games/:gameGroup/:playtype/targets/recently-raised`
 
-!!! info
-	Recently raised means that the user recently increased their `progress` on the target. It explicitly excludes achieved goals -- only things that they are getting closer to.
+> [!note]
+> Recently raised means that the user recently increased their `progress` on the target. It explicitly excludes achieved goals -- only things that they are getting closer to.
 
 ### Parameters
 
@@ -72,11 +72,11 @@ None.
 
 `GET /api/v1/users/:userID/games/:gameGroup/:playtype/targets/quests/:questID`
 
-!!! info
-	If you're looking to evaluate a quest against a user, without knowing whether they're
-	subscribed to it or not, you want [GPT/Targets/Quests/Evaluate-For](gpt-targets.md#evaluate-a-quest-for-a-user-even-if-they-arent-subscribed-to-it).
-
-	This endpoint is admittedly in a very strange position, where it overlaps with that `evaluate-for` endpoint quite significantly, but this endpoint is also intended to return the user's `questSub`, so I thought it best to split this into two endpoints.
+> [!note]
+> If you're looking to evaluate a quest against a user, without knowing whether they're
+> subscribed to it or not, you want [GPT/Targets/Quests/Evaluate-For](gpt-targets.md#evaluate-a-quest-for-a-user-even-if-they-arent-subscribed-to-it).
+>
+> This endpoint is admittedly in a very strange position, where it overlaps with that `evaluate-for` endpoint quite significantly, but this endpoint is also intended to return the user's `questSub`, so I thought it best to split this into two endpoints.
 
 ### Parameters
 

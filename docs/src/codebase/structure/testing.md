@@ -18,9 +18,11 @@ pnpm test
 This will execute every test, and also perform coverage
 analysis.
 
-!!! bug
-	Use the workspace Vitest entrypoints (`bun test`, `just test-typescript`, …) rather than running `node`
-	directly on `.ts` files. Bun invokes Vitest without a separate transpiler for day-to-day runs.
+> [!note]
+> **Bug:**
+>
+> Use the workspace Vitest entrypoints (`bun test`, `just test-typescript`, …) rather than running `node`
+> directly on `.ts` files. Bun invokes Vitest without a separate transpiler for day-to-day runs.
 
 ## Writing Tests
 
@@ -54,5 +56,5 @@ The hack part here is **not** an understatement, and it is genuinely rather dirt
 
 As a downside, this makes error messages *way* more cryptic, but for a 20x performance gain, it can be lived with.
 
-!!! warning
-	If you are getting failures like "Child test left in suite", one of your test files is *crashing* the entire process, leaving all other tests just dangling.
+> [!warning]
+> If you are getting failures like "Child test left in suite", one of your test files is *crashing* the entire process, leaving all other tests just dangling.

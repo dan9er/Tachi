@@ -21,8 +21,8 @@ These endpoints are related to users in general.
 | :------: | :------------------------------------------------: | :------------------------------------: |
 | `<body>` | Array&lt;[UserDocument](../../schemas/user.md)&gt; | The array of up to 100 users returned. |
 
-!!! note
-Users are guaranteeably returned in order of when they were `lastSeen`.
+> [!note]
+> Users are guaranteeably returned in order of when they were `lastSeen`.
 
 ### Example
 
@@ -50,15 +50,15 @@ GET /api/v1/users
 
 `GET /api/v1/users/:userID`
 
-!!! note
-The :userID param has some special functionality,
-and any time you see it in these docs, that
-functionality is supported.
-
-    You may pass the integer userID for this user - 1.
-    You may also pass the username - zkldihis is also case-insensitive, so you could pass zklzkldi
-    You may also pass the special string - `me` - which
-    will select whatever user you are authenticated as.
+> [!note]
+> The :userID param has some special functionality,
+> and any time you see it in these docs, that
+> functionality is supported.
+>
+> You may pass the integer userID for this user - 1.
+> You may also pass the username - zkldihis is also case-insensitive, so you could pass zklzkldi
+> You may also pass the special string - `me` - which
+> will select whatever user you are authenticated as.
 
 ### Parameters
 
@@ -72,11 +72,11 @@ None.
 
 ### Example
 
-!!! note
-`zk` is the username for the user with userID 1.
-
-    it's also the username of the person writing these
-    docs. Hi!
+> [!note]
+> `zk` is the username for the user with userID 1.
+>
+> it's also the username of the person writing these
+> docs. Hi!
 
 #### Request
 
@@ -172,8 +172,8 @@ None.
 | :------: | :--------------------------------------------------: | :-----------------------------------------: |
 | `<body>` | Array&lt;UserGameStatsDocument & \_\_rankingData&gt; | The array of per-game profile documents (ratings and classes) this user has. |
 
-!!! info
-For UI reasons, the UserGameStatsDocuments here have an additional `__rankingData` property, which contains leaderboard ranking information for this user.
+> [!note]
+> For UI reasons, the UserGameStatsDocuments here have an additional `__rankingData` property, which contains leaderboard ranking information for this user.
 
 ### Example
 
@@ -230,9 +230,9 @@ GET /api/v1/users/1/game-profiles
 ];
 ```
 
-!!! info
-In the event a user has played no games, this will
-return an empty array.
+> [!note]
+> In the event a user has played no games, this will
+> return an empty array.
 
 ---
 
@@ -251,8 +251,8 @@ return an empty array.
 | :------: | :---------: | :-----------------------------: |
 |  `pfp`   | JPG, or PNG | The new profile picture to set. |
 
-!!! note
-This endpoint expects multipart form data.
+> [!note]
+> This endpoint expects multipart form data.
 
 ### Response
 
@@ -307,9 +307,9 @@ N/A
 
 `DELETE /api/v1/users/:userID/pfp`
 
-!!! note
-If you do not have a profile picture set, this will be
-a 404 error.
+> [!note]
+> If you do not have a profile picture set, this will be
+> a 404 error.
 
 ### Permissions
 
@@ -345,8 +345,8 @@ Self-explanatory.
 | :------: | :---------: | :----------------------------: |
 | `banner` | JPG, or PNG | The new profile banner to set. |
 
-!!! note
-This endpoint expects multipart form data.
+> [!note]
+> This endpoint expects multipart form data.
 
 ### Response
 
@@ -403,9 +403,9 @@ N/A
 
 `DELETE /api/v1/users/:userID/banner`
 
-!!! note
-If you do not have a profile banner set, this is
-a 404 error.
+> [!note]
+> If you do not have a profile banner set, this is
+> a 404 error.
 
 ### Permissions
 
@@ -424,13 +424,13 @@ None.
 
 - Must be a session-request from the user who owns these notifications.
 
-!!! note
-All of the notification endpoints must be accessed by session-level authentication
-from the right requesting user; viz. no api keys can access these endpoints, and
-nobody can read another players notifications.
-
-    This isn't really for any security reasons, but more for privacy reasons. It feels
-    wrong to be able to let others read others notifications.
+> [!note]
+> All of the notification endpoints must be accessed by session-level authentication
+> from the right requesting user; viz. no api keys can access these endpoints, and
+> nobody can read another players notifications.
+>
+> This isn't really for any security reasons, but more for privacy reasons. It feels
+> wrong to be able to let others read others notifications.
 
 ### Parameters
 
@@ -448,9 +448,9 @@ None.
 
 `POST /api/v1/users/:userID/notifications/mark-all-read`
 
-!!! info
-This endpoints marks all of a users notifications as read, and is intended for a UI
-to invoke this request when they open their inbox.
+> [!note]
+> This endpoints marks all of a users notifications as read, and is intended for a UI
+> to invoke this request when they open their inbox.
 
 ### Permissions
 

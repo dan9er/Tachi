@@ -63,11 +63,11 @@ POST /api/v1/oauth/token
 
 `POST /api/v1/create-code`
 
-!!! info
-	This infers the current user from the session cookie.
-
-	This is *not* meant to be called by external code, and
-	is instead something for `tachi-client` to use on the oauth confirmation screen.
+> [!note]
+> This infers the current user from the session cookie.
+>
+> This is *not* meant to be called by external code, and
+> is instead something for `tachi-client` to use on the oauth confirmation screen.
 
 ### Parameters
 
@@ -81,8 +81,8 @@ None.
 | `userID` | Integer | The user this code belongs to. |
 | `createdOn` | Number | The time in unix milliseconds that this code was created. |
 
-!!! warning
-	These codes expire around 30 minutes from their creation.
+> [!warning]
+> These codes expire around 30 minutes from their creation.
 
 ### Example
 

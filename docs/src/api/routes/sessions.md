@@ -82,9 +82,9 @@ GET /api/v1/sessions/Qe7b00261b1d3ba8e5c9ee4e76e77ea9f07d9493b
 |   `desc` (optional)    | String  | A new description for this session. This must be between 3 and 120 characters. If not present, no update to the description will be made. |
 | `highlight` (optional) | boolean |               Whether this session is highlighted or not. If not present, no change will be made to the highlighted status.               |
 
-!!! info
-Although all these fields are optional, making a request
-without any of them is a 400 error.
+> [!note]
+> Although all these fields are optional, making a request
+> without any of them is a 400 error.
 
 ### Response
 

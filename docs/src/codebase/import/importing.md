@@ -3,15 +3,15 @@
 This page goes over hydrating a DryScore into a fully
 fledged Tachi score, and then goes over how it is imported.
 
-!!! warning
-	Performance has been squeezed out of this process
-	rather aggressively, as such, some of the more
-	'obvious' ways to do things have been ignored
-	for performance gains.
+> [!warning]
+> Performance has been squeezed out of this process
+> rather aggressively, as such, some of the more
+> 'obvious' ways to do things have been ignored
+> for performance gains.
 
-!!! info
-	The code that handles this logic is found in
-	`src/lib/score-import/framework/score-importing/score-importing.ts`.
+> [!note]
+> The code that handles this logic is found in
+> `src/lib/score-import/framework/score-importing/score-importing.ts`.
 
 *****
 
@@ -54,8 +54,8 @@ If the converter was successful, we now have a DryScore, song and chart to work 
 
 Our first step is to turn that DryScore into a 'real score'.
 
-!!! info
-	The code for this is found in `HydrateScore`.
+> [!note]
+> The code for this is found in `HydrateScore`.
 
 Before anything, we calculated the ScoreID for this score.
 This is used to dedupe scores, and is a checksum of
