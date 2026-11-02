@@ -24,14 +24,14 @@ This metric is expected to be a decimal.
 > [!note]
 > **Example:**
 >
-> `ts
+> ```ts
 > percent: {
 > 	type: "DECIMAL",
 > 	validate: p.isBetween(0, 100),
 > 	formatter: FmtPercent,
 > 	description: "EX Score divided by the maximum possible EX Score on this chart.",
 > },
-> `
+> ```
 
 - `INTEGER`
 
@@ -40,14 +40,14 @@ This metric is expected to be a whole number.
 > [!note]
 > **Example:**
 >
-> `ts
+> ```ts
 > {
 > 	type: "INTEGER",
 > 	validate: p.isBetween(0, 100_000),
 > 	formatter: FmtNum,
 > 	description: "The score value.",
 > }
-> `
+> ```
 
 - `ENUM`
 
@@ -56,7 +56,7 @@ This metric is expected to be a string in a provided ordered list of strings. Th
 > [!note]
 > **Example:**
 >
-> `ts
+> ```ts
 > {
 > 	type: "ENUM",
 > 	values: [
@@ -72,7 +72,7 @@ This metric is expected to be a string in a provided ordered list of strings. Th
 > 	minimumRelevantValue: "EASY CLEAR",
 > 	description: "The type of clear this was.",
 > },
-> `
+> ```
 
 - `GRAPH`
 
@@ -85,14 +85,14 @@ This metric is an array of numbers or null.
 > [!note]
 > **Example:**
 >
-> `ts
+> ```ts
 > gaugeHistory: {
 > 	type: "NULLABLE_GRAPH",
 > 	validate: p.isBetween(0, 100),
 > 	description:
 > 		"A snapshot of the gauge percent throughout the chart. The values should be null from the point the user dies until the end of the chart.",
 > },
-> `
+> ```
 >
 > Importantly: something like `[99, 74, 12, null, null, null]` would be legal as a nullable graph.
 >
