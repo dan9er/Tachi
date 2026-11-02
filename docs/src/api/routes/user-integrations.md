@@ -22,7 +22,7 @@ These endpoints are related to a users integrations with external services.
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `authStatus` | boolean | True if the user is authenticated with this kaiType, false if they are not. |
 
 ### Example
@@ -87,7 +87,7 @@ Empty Object.
 ### Parameters
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `code` | String | The intermediate code to use to get the access_token and refresh_token. |
 
 ### Response

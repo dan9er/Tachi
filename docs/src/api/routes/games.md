@@ -16,7 +16,7 @@ None.
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `supportedGames` | String[] | The list of games this service supports. |
 | `configs` | Record&lt;Game, [GameConfig](../../codebase/implementation-details/game-configuration.md)&gt; | Contains a mapping of every supported game to its configuration. |
 
@@ -58,7 +58,7 @@ None.
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `<body>` | GameConfig | The configuration for this game. |
 
 ### Example

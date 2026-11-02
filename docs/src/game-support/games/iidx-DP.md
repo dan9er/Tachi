@@ -12,21 +12,21 @@ For more information on what metrics are and how they work, see [TODO]!
 ### Provided Metrics
 
 | Metric Name | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `score` | Integer | EX Score. This should be between 0 and the maximum possible EX on this chart. |
 | `lamp` | "NO PLAY", "FAILED", "ASSIST CLEAR", "EASY CLEAR", "CLEAR", "HARD CLEAR", "EX HARD CLEAR", "FULL COMBO" | The type of clear this was. |
 
 ### Derived Metrics
 
 | Metric Name | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `percent` | Decimal | EX Score divided by the maximum possible EX Score on this chart. |
 | `grade` | "F", "E", "D", "C", "B", "A", "AA", "AAA", "MAX-", "MAX" | Grades as they are in IIDX. We also add MAX- (94.44...%) and MAX (100%) as their own grades for convenience. |
 
 ### Optional Metrics
 
 | Metric Name | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `fast` | Integer | The amount of mistakes in this score that were a result of hitting early. |
 | `slow` | Integer | The amount of mistakes in this score that were a result of hitting late. |
 | `maxCombo` | Integer | The largest combo in this score. |
@@ -57,7 +57,7 @@ The following judgements are defined:
 The default rating algorithm is `ktLampRating`.
 
 | Name | Description |
-| :: | :: |
+| :-: | :-: |
 | `ktLampRating` | A rating system that values your clear lamps on charts. Tierlist information is taken into account. |
 | `BPI` | A rating system for Kaiden level play. Only applies to 11s and 12s. A BPI of 0 states the score is equal to the Kaiden Average for that chart. A BPI of 100 is equal to the world record. |
 
@@ -66,7 +66,7 @@ The default rating algorithm is `ktLampRating`.
 The default rating algorithm is `ktLampRating`.
 
 | Name | Description |
-| :: | :: |
+| :-: | :-: |
 | `ktLampRating` | An average of the best 10 ktLampRatings this session. |
 | `BPI` | An average of the best 10 BPIs this session. |
 
@@ -75,7 +75,7 @@ The default rating algorithm is `ktLampRating`.
 The default rating algorithm is `ktLampRating`.
 
 | Name | Description |
-| :: | :: |
+| :-: | :-: |
 | `ktLampRating` | An average of your best 20 ktLampRatings. |
 | `BPI` | An average of your best 20 BPIs. |
 
@@ -101,13 +101,13 @@ The default rating algorithm is `ktLampRating`.
 ## Classes
 
 | Name | Type | Values |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `dan` | PROVIDED | KYU_7, KYU_6, KYU_5, KYU_4, KYU_3, KYU_2, KYU_1, DAN_1, DAN_2, DAN_3, DAN_4, DAN_5, DAN_6, DAN_7, DAN_8, DAN_9, DAN_10, CHUUDEN, KAIDEN
 
 ## Versions
 
 | ID | Pretty Name |
-| :: | :: |
+| :-: | :-: |
 | `20` | tricoro |
 | `21` | SPADA |
 | `22` | PENDUAL |

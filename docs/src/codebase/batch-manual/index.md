@@ -43,7 +43,7 @@ The `meta` key contains metadata, and looks like this:
 The fields have the following values:
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `game` | Any Game Identifier | The game this import is for. |
 | `playtype` | Any Playtype for the above game. | The playtype this import is for. |
 | `service` | String | A humanised string to explain where these scores are from. This must be between 2 and 15 characters. |
@@ -68,7 +68,7 @@ score is as follows:
 The properties are described as this:
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `score` | Number | The score for this, well, score. This should use the default scoring algorithm for this game. |
 | `lamp` | Lamp | The lamp for this score. This should be one of the lamps as described in the config for your game + playtype. |
 | `percent` (Conditional) | Number | Only appears for `jubeat`. This should be set to the Percent for this score. In jubeat's case, this is your Music Rate. |

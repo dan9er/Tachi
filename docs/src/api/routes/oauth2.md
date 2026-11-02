@@ -15,7 +15,7 @@ For a detailed explaination on how to use the OAuth2 flow, you can check [Using 
 ### Parameters
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `client_id` | String | Your clients ID. |
 | `client_secret` | String | Your clients secret. |
 | `grant_type` | "authorization_code" | This is the only form of grant_type we currently support. |
@@ -25,7 +25,7 @@ For a detailed explaination on how to use the OAuth2 flow, you can check [Using 
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `<body>` | APIKeyDocument | The APIKeyDocument created for your service to use. |
 
 ### Example
@@ -76,7 +76,7 @@ None.
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `code` | String | The intermediate code. |
 | `userID` | Integer | The user this code belongs to. |
 | `createdOn` | Number | The time in unix milliseconds that this code was created. |

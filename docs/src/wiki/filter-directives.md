@@ -60,7 +60,7 @@ By default, a directive performs a loose match on that value, but we can
 change that behaviour!
 
 | Name | Example | What it does. |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | Normal | `title=AA` | Matches any title that contains "AA". |
 | Exact | `title==AA` | Matches any title that is *exactly* AA. |
 | Not | `title!=AA` | Matches any title that does not contain AA. |

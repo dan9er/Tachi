@@ -12,7 +12,7 @@ For more information on what metrics are and how they work, see [TODO]!
 ### Provided Metrics
 
 | Metric Name | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `score` | Integer | The score value. This is between 0 and 1.01 million. |
 | `noteLamp` | "NONE", "FULL COMBO", "ALL JUSTICE", "ALL JUSTICE CRITICAL" | The type of combo this was. |
 | `clearLamp` | "FAILED", "CLEAR", "HARD", "BRAVE", "ABSOLUTE", "CATASTROPHY" | The type of clear this was. |
@@ -20,13 +20,13 @@ For more information on what metrics are and how they work, see [TODO]!
 ### Derived Metrics
 
 | Metric Name | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `grade` | "D", "C", "B", "BB", "BBB", "A", "AA", "AAA", "S", "S+", "SS", "SS+", "SSS", "SSS+" | The grade this score was. |
 
 ### Optional Metrics
 
 | Metric Name | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `fast` | Integer | The amount of mistakes in this score that were a result of hitting early. |
 | `slow` | Integer | The amount of mistakes in this score that were a result of hitting late. |
 | `maxCombo` | Integer | The largest combo in this score. |
@@ -47,19 +47,19 @@ The following judgements are defined:
 ### Score Rating Algorithms
 
 | Name | Description |
-| :: | :: |
+| :-: | :-: |
 | `rating` | The rating value of this score. This is identical to the system used in game. |
 
 ### Session Rating Algorithms
 
 | Name | Description |
-| :: | :: |
+| :-: | :-: |
 | `naiveRating` | The average of your best 10 ratings this session. |
 
 ### Profile Rating Algorithms
 
 | Name | Description |
-| :: | :: |
+| :-: | :-: |
 | `naiveRating` | The average of your best 50 ratings. |
 
 ## Difficulties
@@ -73,7 +73,7 @@ The following judgements are defined:
 ## Classes
 
 | Name | Type | Values |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `colour` | DERIVED | BLUE, GREEN, ORANGE, RED, PURPLE, COPPER, SILVER, GOLD, PLATINUM, RAINBOW, RAINBOW_II, RAINBOW_III, RAINBOW_IV, RAINBOW_EX_I, RAINBOW_EX_II, RAINBOW_EX_III
 | `dan` | PROVIDED | DAN_I, DAN_II, DAN_III, DAN_IV, DAN_V, DAN_INFINITE
 | `emblem` | PROVIDED | DAN_I, DAN_II, DAN_III, DAN_IV, DAN_V, DAN_INFINITE
@@ -81,7 +81,7 @@ The following judgements are defined:
 ## Versions
 
 | ID | Pretty Name |
-| :: | :: |
+| :-: | :-: |
 | `paradiselost` | PARADISE LOST |
 | `new` | NEW |
 | `newplus` | NEW PLUS |

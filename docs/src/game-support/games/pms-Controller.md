@@ -12,21 +12,21 @@ For more information on what metrics are and how they work, see [TODO]!
 ### Provided Metrics
 
 | Metric Name | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `score` | Integer | EX Score. This should be between 0 and the maximum possible EX on this chart. |
 | `lamp` | "NO PLAY", "FAILED", "ASSIST CLEAR", "EASY CLEAR", "CLEAR", "HARD CLEAR", "EX HARD CLEAR", "FULL COMBO" | The type of clear this was. |
 
 ### Derived Metrics
 
 | Metric Name | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `grade` | "F", "E", "D", "C", "B", "A", "AA", "AAA", "MAX-", "MAX" | Grades as they are in IIDX. We also add MAX- (94.44...%) and MAX (100%) as their own grades for convenience. |
 | `percent` | Decimal | EX Score divided by the maximum possible EX Score on this chart. |
 
 ### Optional Metrics
 
 | Metric Name | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `fast` | Integer | The amount of mistakes in this score that were a result of hitting early. |
 | `slow` | Integer | The amount of mistakes in this score that were a result of hitting late. |
 | `maxCombo` | Integer | The largest combo in this score. |
@@ -62,19 +62,19 @@ The following judgements are defined:
 ### Score Rating Algorithms
 
 | Name | Description |
-| :: | :: |
+| :-: | :-: |
 | `sieglinde` | A clearing algorithm that rewards you points based on how difficult an easy clear or hard clear was. |
 
 ### Session Rating Algorithms
 
 | Name | Description |
-| :: | :: |
+| :-: | :-: |
 | `sieglinde` | The average of your best 10 sieglinde ratings this session. |
 
 ### Profile Rating Algorithms
 
 | Name | Description |
-| :: | :: |
+| :-: | :-: |
 | `sieglinde` | The average of your best 20 sieglinde ratings. |
 
 ## Difficulties
@@ -84,7 +84,7 @@ The following judgements are defined:
 ## Classes
 
 | Name | Type | Values |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `dan` | PROVIDED | INSANE_1, INSANE_2, INSANE_3, INSANE_4, INSANE_5, INSANE_6, INSANE_7, INSANE_8, INSANE_9, INSANE_10, INSANE_KAIDEN, OVERJOY, UNDEFINED
 
 ## Versions

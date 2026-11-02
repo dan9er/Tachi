@@ -3,7 +3,7 @@
 The content is as follows:
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `userID` | Integer | The user ID who had a class update. |
 | `set` | Game Class Set | The name of the class set that was updated, such as `genocideDan` or `vfClass`. |
 | `game` | Game | The game this class update was for. |

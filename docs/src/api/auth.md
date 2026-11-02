@@ -53,7 +53,7 @@ Some endpoints require specific permissions, such as a `score_submit` permission
 The table of permissions is as follows.
 
 | Permission | Description |
-| :: | :: |
+| :-: | :-: |
 | `submit_score` | Perform requests that could submit scores for the user. |
 | `customise_profile` | Perform requests that could modify user info, like their status or about me. |
 | `customise_session` | Perform requests that could modify the users sessions, such as changing their names. |

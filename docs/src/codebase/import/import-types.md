@@ -19,7 +19,7 @@ type/name
 There are three types.
 
 | Type | Description |
-| :: | :: |
+| :-: | :-: |
 | `file/` | The data is coming from a file, such as one from a multipart form submission. |
 | `ir/` | The data is coming from a HTTP Request sent to us. |
 | `api/` | The data is being fetched by us from another service through HTTP Requests. |
@@ -47,7 +47,7 @@ is set to indicate that this was done with User Intent.
 ## List of Import Types
 
 | ImportType | Description | Availability | User Intent |
-| :: | :: | :: | :: |
+| :-: | :-: | :-: | :-: |
 | `file/eamusement-iidx-csv` | The E-amusement CSV format for IIDX. This type accepts both Pre-HV and Post-HV formats. | Kamaitachi | Yes |
 | `file/batch-manual` | The Tachi BATCH-MANUAL format submitted through a multipart form. | Kamaitachi & Bokutachi | Yes |
 | `file/solid-state-squad` | The IIDX XML output by Solid State Squad. | Kamaitachi | Yes |

@@ -19,12 +19,12 @@ This is because we're handling file imports, and is the
 appropriate way to send files.
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `importType` | String | The ImportType this import is for. This only accepts `file/` [ImportTypes](../../codebase/import/import-types.md). |
 | `scoreData` | File | The file to import scores from. |
 
 | HTTP Header | Description |
-| :: | :: |
+| :-: | :-: |
 | `X-User-Intent` (optional) | If this header is "true", the request is assumed to have been sent with 'User Intent'. For more on this, see [Import Types](../../codebase/import/import-types.md) |
 
 > [!note]
@@ -42,7 +42,7 @@ There are two reponse scenarios for this endpoint, depending on whether the serv
 If an external score processor is being used, **202** is returned as a status code, and you are given the following:
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `url` | String | A URL to poll for information about this import, while it's being processed. |
 | `importID` | String | The ID of the import currently being processed. |
 
@@ -51,7 +51,7 @@ If an external score processor is being used, **202** is returned as a status co
 If score processing is not done externally, the following is returned:
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `<body>` | ImportDocument | The import document created as a result of this import. |
 
 ### Example
@@ -126,7 +126,7 @@ be performed programmatically, as long as the key has `submit_score` permissions
 ### Parameters
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `importType` | Any Supported API Import Type | The importType this synchronisation is for. |
 
 ### Response
@@ -139,7 +139,7 @@ There are two reponse scenarios for this endpoint, depending on whether the serv
 If an external score processor is being used, **202** is returned as a status code, and you are given the following:
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `url` | String | A URL to poll for information about this import, while it's being processed. |
 | `importID` | String | The ID of the import currently being processed. |
 
@@ -148,7 +148,7 @@ If an external score processor is being used, **202** is returned as a status co
 If score processing is not done externally, the following is returned:
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `<body>` | ImportDocument | The import document created as a result of this import. |
 
 ### Example
@@ -191,7 +191,7 @@ None.
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `processed` | Integer | The amount of orphans processed. |
 | `failed` | Integer | The amount of orphans that did not find a parent chart, and were kept as orphans. |
 | `success` | Integer | The amount of orphans that successfully found a parent chart, and were turned into real scores. |
@@ -229,14 +229,14 @@ Returns rows from `orphan_score` for the authenticated user (scores that failed 
 ### Query parameters
 
 | Parameter | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `limit` | Integer (optional) | Page size, 1–100. Default `50`. |
 | `after` | String (optional) | Keyset cursor: the `rowID` from the last orphan in the previous page. Omit on the first request. |
 
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `orphans` | Array | Each object includes `orphanID`, `rowID`, `importType`, `gameGroup`, `timeInserted` (ms), `message` (nullable), `summary` (nullable, best-effort hint from stored data). |
 | `hasMore` | Boolean | Whether another page exists after this one. |
 
@@ -255,13 +255,13 @@ Returns a single `orphan_score` row for the authenticated user, including raw `d
 ### Parameters
 
 | Parameter | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `orphanID` | Path | The orphan’s `orphanID` (same as in `GET /import/orphans` or import errors). |
 
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `orphanID` | String | Stable orphan identifier. |
 | `importType` | String | Import type that produced the orphan. |
 | `gameGroup` | String | Game group. |
@@ -285,7 +285,7 @@ Removes a single `orphan_score` row **only if** it belongs to the authenticated 
 ### Parameters
 
 | Parameter | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `orphanID` | Path | The orphan’s `orphanID` (for example from an import error or from `GET /import/orphans`). |
 
 ### Response

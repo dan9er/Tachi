@@ -18,7 +18,7 @@ in successive score import steps.
 ## Output
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `scoreIDs` | Array&lt;string&gt; | The array of scoreIDs imported as a result of this import. |
 | `errors` | Array&lt;{ type, message }&gt; | An array of the failed ImportProcessingInfo's Types and Error Messages.
 | `chartIDs` | Set&lt;string&gt; | A set of the chartIDs modified by this import. This is a set to ensure that every chartID here is unique. |

@@ -19,7 +19,7 @@ None.
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `<body>` | APIKeyDocument | An array of APIKeyDocuments that belong to this user. |
 
 ### Example
@@ -75,7 +75,7 @@ DELETE /api/v1/users/1/api-token/foobar
 ### Parameters
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `permissions` | Array&lt;String&gt; | An array of permissions you wish the key to have. |
 | `clientID` | String | Alternatively, you can pass the clientID of an OAuth2 Client. This will select permissions based on what that client wants. |
 | `identifier` | String | A humanised identifier for what the string was from. Necessary if using `permissions`. Filled out for you if using `clientID`.
@@ -88,5 +88,5 @@ DELETE /api/v1/users/1/api-token/foobar
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `<body>` | APITokenDocument | The API Token you created. |

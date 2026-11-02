@@ -22,14 +22,14 @@ score, that would be terrible!
 > As an example, consider the following scores.
 >
 > | Score | Lamp |
-> | :: | :: |
+> | :-: | :-: |
 > | 5000 | CLEAR |
 > | 4000 | HARD CLEAR |
 >
 > Your PB on this chart would then therefore be:
 >
 > | Score | Lamp |
-> | :: | :: |
+> | :-: | :-: |
 > | 5000 | HARD CLEAR|
 >
 > As it joins the best score with the best lamp!

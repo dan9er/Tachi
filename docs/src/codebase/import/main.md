@@ -10,7 +10,7 @@ This function can be found at `src/lib/score-import/framework/score-import-main.
 `ScoreImportMain` takes four arguments and an optional fifth.
 
 | Argument | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `user` | [UserDocument](../../schemas/user.md) | The user that is making this import request. |
 | `userIntent` | boolean | Whether this import was performed with User Intent - See [Import Types](./import-types.md#user-intent) |
 | `importType` | ImportType | What kind of import "type" this is. For more on this, see [Import Types](./import-types.md)

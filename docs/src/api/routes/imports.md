@@ -19,7 +19,7 @@ None.
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `scores` | Array&lt;ScoreDocument&gt; | All of the scores imported from this import. |
 | `songs` | Array&lt;SongDocument&gt; | All of the songs related to the scores in this import. |
 | `charts` | Array&lt;ChartDocument&gt; | All of the charts related to the scores in this import. |
@@ -89,7 +89,7 @@ None.
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `importStatus` | "completed" \| "ongoing" | If this is equal to completed, the import is finished and the importDocument is returned under `import` . If this is "ongoing", a `progress` key will display information and progress though the import |
 | `progress` | `{ description: string }` \| Not Present | If `importStatus` is "ongoing", this will contain a string `description` of where in the import process this import is. |
 | `import` | ImportDocument \| Not Present | If `importStatus` is "completed", this will contain the import document that was just inserted into the database. |

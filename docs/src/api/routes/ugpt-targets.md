@@ -19,7 +19,7 @@ None.
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `goalSubs` | Array&lt;GoalSubDocument&gt; | The goal subscriptions that were recently achieved by this user. |
 | `goals` | Array&lt;GoalDocument&gt; | The goal documents that were recently achieved (if any). |
 | `questSubs` | Array&lt;QuestSubDocument&gt; | The quest subscriptions that were recently achieved by this user. |
@@ -42,7 +42,7 @@ None.
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `goalSubs` | Array&lt;GoalSubDocument&gt; | The goal subscriptions that were recently achieved by this user. |
 | `goals` | Array&lt;GoalDocument&gt; | The goal documents that were recently achieved (if any). |
 | `questSubs` | Array&lt;QuestSubDocument&gt; | The quest subscriptions that were recently achieved by this user. |
@@ -62,7 +62,7 @@ None.
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `quests` | Array&lt;QuestDocument&gt; | All of the quests this user is subscribed to. |
 | `questSubs` | Array&lt;QuestSubDocument&gt; | All of this user's quest subscriptions. |
 
@@ -85,7 +85,7 @@ None.
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `questSub` | QuestSubDocument | The user's subscription to this quest. |
 | `quest` | QuestDocument | The quest document in question. |
 | `goals` | Array&lt;GoalDocument&gt; | The goals involved in this quest. |
@@ -94,7 +94,7 @@ None.
 #### EvaluatedGoalResult
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `goalID` | String | The goal ID that these results are for. |
 | `achieved` | Boolean | Whether this goal was achieved or not. |
 | `progress` | Number \| Null | How much progress this user made on this goal. Null if no progress was made. |
@@ -120,7 +120,7 @@ None. (All relevant info is in the URL.)
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `goals` | Array&lt;GpalDocument&gt; | The goals involved in this quest. |
 | `quest` | QuestDocument | The quest the user just subscribed to. |
 | `goalResults` | Array&lt;EvaluatedGoalResults&gt; | The user's progress on each individual goal in this quest. |
@@ -144,5 +144,5 @@ None.
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `quest` | QuestDocument | The quest you just unsubscribed from. |

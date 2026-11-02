@@ -15,14 +15,14 @@ It's a good way of sanity checking whether your code works.
 ### Parameters
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `echo` | String | A string to echo. This is useful for checking whether parameters are sending over properly. |
 
 
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `serverTime` | Integer | The current time of the server in Unix Milliseconds. |
 | `startTime` | Integer | The time this server was booted in Unix Milliseconds. |
 | `whoami` | Integer \| null | The userID you are authenticated as. If you are not authenticated, this is null. |

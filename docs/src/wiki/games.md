@@ -41,7 +41,7 @@ fact is hidden in the UI, but might still poke up in URLs.
 The following games are supported on [Kamaitachi](https://kamai.tachi.ac).
 
 | Name | Internal Name | Playtypes |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | beatmania IIDX | `iidx` | `SP`, `DP` |
 | CHUNITHM | `chunithm` | `Single` |
 | MÚSECA | `museca` | `Single` |
@@ -60,7 +60,7 @@ The following games are supported on [Kamaitachi](https://kamai.tachi.ac).
 The following games are supported on [Bokutachi](https://boku.tachi.ac).
 
 | Name | Internal Name | Playtypes |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | BMS | `bms` | `7K`, `14K` |
 | unnamed_sdvx_clone | `usc` | `Controller` `Keyboard`[^2] |
 | PMS | `pms` | `Controller`, `Keyboard`[^2] |

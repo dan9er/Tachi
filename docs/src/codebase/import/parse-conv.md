@@ -280,7 +280,7 @@ with closures or similar.
 Converters are called with these four arguments:
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `data` | ParserElement | The given element in the parser's iterable. |
 | `context` | ParserContext | The context the parser returned. |
 | `importType` | [ImportType](./import-types.md) | The import type this import is for. |

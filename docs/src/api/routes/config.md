@@ -13,7 +13,7 @@ These endpoints display certain properties about the Tachi [config file](../../c
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `<body>` | Integer | The value in `conf.json5` for BEATORAJA_QUEUE_SIZE. |
 
 
@@ -26,7 +26,7 @@ These endpoints display certain properties about the Tachi [config file](../../c
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `<body>` | Integer | The value in `conf.json5` for USC_QUEUE_SIZE. |
 
 

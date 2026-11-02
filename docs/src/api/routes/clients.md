@@ -24,7 +24,7 @@ None.
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `<body>` | Array&lt;OAuth2ClientDoc&gt; | All of the OAuth2 clients you have created. |
 
 ### Example
@@ -58,7 +58,7 @@ GET /api/v1/clients
 ### Parameters
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `name` | String | A string between 3 and 80 characters. The name for this client. |
 | `redirectUri` | Optional String (Valid URI) | Must be a HTTP/HTTPS URL, This is where users will be sent to after clicking Yes on the prompt. |
 | `webhookUri` | Optional String (Valid URI) | Must be a HTTP/HTTPS URL. Registers this URL as a URL that wants webhook events to be sent to it. Read more about webhooks [here](../webhooks/main.md). |
@@ -69,7 +69,7 @@ GET /api/v1/clients
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `<body>` | OAuth2ClientDoc | The OAuth2Client you just created. |
 
 ### Example
@@ -115,7 +115,7 @@ None.
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `<body>` | OAuth2ClientDoc without clientSecret | The client document at this ID. |
 
 ### Example
@@ -152,7 +152,7 @@ GET /api/v1/clients/some_client_id
 ### Parameters
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `name` | String | A string between 3 and 80 characters. |
 | `webhookUri` | String | A new webhookUri. |
 | `redirectUri` | String | A new redirectUri. |
@@ -168,7 +168,7 @@ GET /api/v1/clients/some_client_id
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `<body>` | OAuth2ClientDoc | The new client document with the patched changes applied. |
 
 ### Example
@@ -215,7 +215,7 @@ None.
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `<body>` | OAuth2ClientDoc | The new client document with the new secret. |
 
 ### Example

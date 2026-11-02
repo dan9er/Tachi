@@ -16,7 +16,7 @@ require an `authLevel` of at least 3. For more information, see the [UserDocumen
 ### Parameters
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `logLevel` | "crit" \| "severe" \| "warn" \| "info" \| "verbose" \| "debug" | The log level to change to. |
 | `duration` | Number, Optional | How long to keep this change for in minutes. If not set, defaults to 60 minutes. |
 | `noReset` | Boolean, Optional | If true, do not ever reset this log level change. |
@@ -56,7 +56,7 @@ This performs all the necessary checks to remove a score document aswell.
 ### Parameters
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `scoreID` | String | The scoreID to delete. |
 
 ### Response
@@ -119,7 +119,7 @@ POST /api/v1/admin/recalc-pbs
 ### Parameters
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `userID` | Integer | The user part of the UGPT. |
 | `game` | Game | The game part of the UGPT. |
 | `playtype` | Playtype | The PT part of the UGPT. Must be for the above game. |
@@ -160,7 +160,7 @@ Empty Object.
 ### Parameters
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `chartID` | String | The chartID you wish to destroy. |
 | `game` | Game | The game this chart belongs to (Necessary for lookups). |
 

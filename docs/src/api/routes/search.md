@@ -9,13 +9,13 @@
 ### Parameters
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `search` | String | What to search for. |
 
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `users` | Array&lt;[UserDocument](../../schemas/user.md)&gt; | The array of users whose usernames look like the search criterion. |
 | `songs` | ([SongDocument](../../schemas/song.md) With [__textScore](../../codebase/implementation-details/search.md) and `game`.)[] | An array of songs from all games, with `__textScore` and `game` properties attached. |
 

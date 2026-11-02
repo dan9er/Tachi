@@ -13,13 +13,13 @@
 ### Parameters
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `getRelated` | Presence | If present, also return the song and chart for this score document. |
 
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `score` | [ScoreDocument](../../schemas/score.md) | The score document with this scoreID. |
 | `song` (Conditional) | [SongDocument](../../schemas/song.md) | If `getRelated` is set, then this is the song the score belongs to. |
 | `chart` (Conditional) | [ChartDocument](../../schemas/chart.md) | Same as above, but for the chart document. |
@@ -65,7 +65,7 @@ GET /api/v1/scores/Re7b00261b1d3ba8e5c9ee4e76e77ea9f07d9493b
 ### Parameters
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `comment` (Optional) | Null or String | A string between 1 and 120 characters, or null. If null, the score will have its comment unset. If not, the comment for this score will be set to its contents. If the key is not present, no change will be made. |
 | `highlight` (Optional) | Boolean | Whether this score was a highlight or not. If this field is not present, no change will be made to the highlight status. |
 
@@ -76,7 +76,7 @@ GET /api/v1/scores/Re7b00261b1d3ba8e5c9ee4e76e77ea9f07d9493b
 ### Response
 
 | Property | Type | Description |
-| :: | :: | :: |
+| :-: | :-: | :-: |
 | `<body>` | [ScoreDocument](../../schemas/score.md) | The new score document.
 
 ### Example

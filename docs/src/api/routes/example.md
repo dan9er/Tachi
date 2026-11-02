@@ -65,7 +65,7 @@ _Parameters are always present unless stated to be conditional/optional._
 > For example:
 >
 > | Property | Type | Description |
-> | :: | :: | :: |
+> | :-: | :-: | :-: |
 > | `<body>` | String | The greeting. |
 >
 > Corresponds to:
