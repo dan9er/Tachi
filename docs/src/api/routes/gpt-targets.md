@@ -21,11 +21,11 @@ None.
 
 ### Response
 
-|  Property   |             Type              |                        Description                        |
-| :---------: | :---------------------------: | :-------------------------------------------------------: |
-|   `goals`   |   Array&lt;GoalDocument&gt;   |      The goal documents that were recently achieved.      |
-|  `quests`   |  Array&lt;QuestDocument&gt;   |     The quest documents that were recently achieved.      |
-| `goalSubs`  | Array&lt;GoalSubDocument&gt;  | User subscriptions to goals that were recently achieved.  |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `goals` | Array&lt;GoalDocument&gt; | The goal documents that were recently achieved. |
+| `quests` | Array&lt;QuestDocument&gt; | The quest documents that were recently achieved. |
+| `goalSubs` | Array&lt;GoalSubDocument&gt; | User subscriptions to goals that were recently achieved. |
 | `questSubs` | Array&lt;QuestSubDocument&gt; | User subscriptions to quests that were recently achieved. |
 
 ### Example
@@ -85,11 +85,11 @@ None.
 
 ### Response
 
-|  Property   |             Type              |                           Description                            |
-| :---------: | :---------------------------: | :--------------------------------------------------------------: |
-|   `goals`   |   Array&lt;GoalDocument&gt;   |         The goal documents that were recently achieved.          |
-|  `quests`   |  Array&lt;QuestDocument&gt;   |         The quest documents that were recently achieved.         |
-| `goalSubs`  | Array&lt;GoalSubDocument&gt;  | User subscriptions to goals that were recently interacted with.  |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `goals` | Array&lt;GoalDocument&gt; | The goal documents that were recently achieved. |
+| `quests` | Array&lt;QuestDocument&gt; | The quest documents that were recently achieved. |
+| `goalSubs` | Array&lt;GoalSubDocument&gt; | User subscriptions to goals that were recently interacted with. |
 | `questSubs` | Array&lt;QuestSubDocument&gt; | User subscriptions to quests that were recently interacted with. |
 
 ### Example
@@ -143,8 +143,8 @@ N/A
 
 ### Response
 
-| Property |                      Type                      |                                                     Description                                                      |
-| :------: | :--------------------------------------------: | :------------------------------------------------------------------------------------------------------------------: |
+| Property | Type | Description |
+| :-: | :-: | :-: |
 | `<body>` | Array&lt;GoalDocument & `__subscriptions` &gt; | An array of the 100 most popular goals for this GPT, where `__subscriptions` is how many subscriptions the goal has. |
 
 ### Example
@@ -182,12 +182,12 @@ None.
 
 ### Response
 
-|    Property    |             Type             |                Description                |
-| :------------: | :--------------------------: | :---------------------------------------: |
-|     `goal`     |         GoalDocument         |       The goal document at this ID.       |
-|   `goalSubs`   | Array&lt;GoalSubDocument&gt; |  All of the subscriptions to this goal.   |
-|    `users`     |  Array&lt;UserDocument&gt;   | All of the users subscribed to this goal. |
-| `parentQuests` |  Array&lt;QuestDocument&gt;  | All of the quests that include this goal. |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `goal` | GoalDocument | The goal document at this ID. |
+| `goalSubs` | Array&lt;GoalSubDocument&gt; | All of the subscriptions to this goal. |
+| `users` | Array&lt;UserDocument&gt; | All of the users subscribed to this goal. |
+| `parentQuests` | Array&lt;QuestDocument&gt; | All of the quests that include this goal. |
 
 ---
 
@@ -204,21 +204,21 @@ None.
 
 ### Parameters
 
-| Property |  Type  |             Description             |
-| :------: | :----: | :---------------------------------: |
+| Property | Type | Description |
+| :-: | :-: | :-: |
 | `userID` | String | The user to evaluate this goal for. |
 
 ### Response
 
-|        Property         |     Type     |                       Description                       |
-| :---------------------: | :----------: | :-----------------------------------------------------: |
-|         `goal`          | GoalDocument |          The goal document that was evaluated.          |
-|         `user`          | UserDocument |       The user that this goal was evaluated for.        |
-|   `results.achieved`    |   Boolean    | Whether this user would have this goal achieved or not. |
-|   `results.progress`    |   Integer    |    What this user's progress would be on this goal.     |
-| `results.progressHuman` |    String    |  A user friendly format for this user's goal progress.  |
-|     `results.outOf`     |   Integer    |               What this goal was out of.                |
-|  `results.outOfHuman`   |    String    |  A user friendly format for what this goal was out of.  |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `goal` | GoalDocument | The goal document that was evaluated. |
+| `user` | UserDocument | The user that this goal was evaluated for. |
+| `results.achieved` | Boolean | Whether this user would have this goal achieved or not. |
+| `results.progress` | Integer | What this user's progress would be on this goal. |
+| `results.progressHuman` | String | A user friendly format for this user's goal progress. |
+| `results.outOf` | Integer | What this goal was out of. |
+| `results.outOfHuman` | String | A user friendly format for what this goal was out of. |
 
 > [!note]
 > For more info on `progress`/`outOf`, see [Goals](../../codebase/implementation-details/goals-quests.md#evaluating-a-users-progress).
@@ -270,14 +270,14 @@ GET /api/v1/games/iidx/SP/targets/goals/some_goal_id/evaluate-for?userID=zkldi
 
 ### Parameters
 
-| Property |  Type  |       Description        |
-| :------: | :----: | :----------------------: |
+| Property | Type | Description |
+| :-: | :-: | :-: |
 | `search` | String | The query to search for. |
 
 ### Response
 
-| Property |            Type            |                     Description                      |
-| :------: | :------------------------: | :--------------------------------------------------: |
+| Property | Type | Description |
+| :-: | :-: | :-: |
 | `<body>` | Array&lt;QuestDocument&gt; | All of the quests that matched this search criteria. |
 
 ---
@@ -292,13 +292,13 @@ N/A
 
 ### Response
 
-|      Property      |              Type              |                     Description                     |
-| :----------------: | :----------------------------: | :-------------------------------------------------: |
-|      `quest`       |         QuestDocument          |            The quest with this questID.             |
-|    `questSubs`     | Array&lt;QuestSubDocument&gt;  |       All of the subscriptions to this quest.       |
-|      `users`       |   Array&lt;UserDocument&gt;    | All of the user's with subscriptions to this quest. |
-|      `goals`       |   Array&lt;GoalDocument&gt;    |           All of the goals in this quest.           |
-| `parentQuestlines` | Array&lt;QuestlineDocument&gt; |       Any questlines that contain this quest.       |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `quest` | QuestDocument | The quest with this questID. |
+| `questSubs` | Array&lt;QuestSubDocument&gt; | All of the subscriptions to this quest. |
+| `users` | Array&lt;UserDocument&gt; | All of the user's with subscriptions to this quest. |
+| `goals` | Array&lt;GoalDocument&gt; | All of the goals in this quest. |
+| `parentQuestlines` | Array&lt;QuestlineDocument&gt; | Any questlines that contain this quest. |
 
 ---
 
@@ -308,30 +308,30 @@ N/A
 
 ### Parameters
 
-| Property |  Type  |                  Description                   |
-| :------: | :----: | :--------------------------------------------: |
+| Property | Type | Description |
+| :-: | :-: | :-: |
 | `userID` | String | The user you wish to evaluate this quest upon. |
 
 ### Response
 
-|   Property    |               Type               |                                    Description                                    |
-| :-----------: | :------------------------------: | :-------------------------------------------------------------------------------: |
-|    `goals`    |    Array&lt;GoalDocument&gt;     |                          All of the goals in this quest.                          |
-| `goalResults` | Array&lt;EvaluatedGoalResult&gt; |            This user's progress on each individual goal in this quest.            |
-|  `achieved`   |             Boolean              |                 Whether this user has this quest achieved or not.                 |
-|  `progress`   |             Integer              |               How many goals this user has achieved in this quest.                |
-|    `outOf`    |             Integer              | How many goals need to be achieved in this quest for it to be marked as achieved. |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `goals` | Array&lt;GoalDocument&gt; | All of the goals in this quest. |
+| `goalResults` | Array&lt;EvaluatedGoalResult&gt; | This user's progress on each individual goal in this quest. |
+| `achieved` | Boolean | Whether this user has this quest achieved or not. |
+| `progress` | Integer | How many goals this user has achieved in this quest. |
+| `outOf` | Integer | How many goals need to be achieved in this quest for it to be marked as achieved. |
 
 #### EvaluatedGoalResult
 
-|    Property     |      Type      |                                       Description                                        |
-| :-------------: | :------------: | :--------------------------------------------------------------------------------------: |
-|    `goalID`     |     String     |                         The goal ID that these results are for.                          |
-|   `achieved`    |    Boolean     |                          Whether this goal was achieved or not.                          |
-|   `progress`    | Number \| Null |       How much progress this user made on this goal. Null if no progress was made.       |
-|     `outOf`     |     Number     | What `progress` needs to be greater than or equal to for this goal to count as achieved. |
-| `progressHuman` |     String     |              A humanised, pretty-printed progress indicator for this goal.               |
-|  `outOfHuman`   |     String     |                A humanised, pretty-printed outOf indicator for this goal.                |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `goalID` | String | The goal ID that these results are for. |
+| `achieved` | Boolean | Whether this goal was achieved or not. |
+| `progress` | Number \| Null | How much progress this user made on this goal. Null if no progress was made. |
+| `outOf` | Number | What `progress` needs to be greater than or equal to for this goal to count as achieved. |
+| `progressHuman` | String | A humanised, pretty-printed progress indicator for this goal. |
+| `outOfHuman` | String | A humanised, pretty-printed outOf indicator for this goal. |
 
 ---
 
@@ -341,14 +341,14 @@ N/A
 
 ### Parameters
 
-| Property |  Type  |             Description              |
-| :------: | :----: | :----------------------------------: |
+| Property | Type | Description |
+| :-: | :-: | :-: |
 | `search` | String | A name of a questline to search for. |
 
 ### Response
 
-| Property |              Type              |                          Description                           |
-| :------: | :----------------------------: | :------------------------------------------------------------: |
+| Property | Type | Description |
+| :-: | :-: | :-: |
 | `<body>` | Array&lt;QuestlineDocument&gt; | An array of QuestlineDocuments, based on the search parameter. |
 
 ---
@@ -363,7 +363,7 @@ N/A
 
 ### Response
 
-|  Property   |            Type            |                     Description                     |
-| :---------: | :------------------------: | :-------------------------------------------------: |
-| `questline` |     QuestlineDocument      |         The questline document at this ID.          |
-|  `quests`   | Array&lt;QuestDocument&gt; | All of the quest documents that belong to this set. |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `questline` | QuestlineDocument | The questline document at this ID. |
+| `quests` | Array&lt;QuestDocument&gt; | All of the quest documents that belong to this set. |

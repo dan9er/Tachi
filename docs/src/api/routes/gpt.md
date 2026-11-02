@@ -16,8 +16,8 @@ None.
 
 ### Response
 
-| Property |     Type     |                   Description                    |
-| :------: | :----------: | :----------------------------------------------: |
+| Property | Type | Description |
+| :-: | :-: | :-: |
 | `config` | GamePTConfig | The configuration file for this game + playtype. |
 
 > [!warning]
@@ -58,16 +58,16 @@ GET /api/v1/games/iidx/SP
 
 ### Parameters
 
-|     Property     |  Type  |                                        Description                                         |
-| :--------------: | :----: | :----------------------------------------------------------------------------------------: |
+| Property | Type | Description |
+| :-: | :-: | :-: |
 | `alg` (Optional) | String | If present, specifies an alternative algorithm to sort players on, instead of the default. |
 
 ### Response
 
-|  Property   |                        Type                        |                    Description                     |
-| :---------: | :------------------------------------------------: | :------------------------------------------------: |
-| `gameStats` |               Array&lt;GameStats&gt;               |    The sorted statistics for the leaderboards.     |
-|   `users`   | Array&lt;[UserDocument](../../schemas/user.md)&gt; | All of the related users for the above statistics. |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `gameStats` | Array&lt;GameStats&gt; | The sorted statistics for the leaderboards. |
+| `users` | Array&lt;[UserDocument](../../schemas/user.md)&gt; | All of the related users for the above statistics. |
 
 ### Example
 
@@ -112,9 +112,9 @@ None.
 
 ### Response
 
-| Property |                   Type                    |                          Description                          |
-| :------: | :---------------------------------------: | :-----------------------------------------------------------: |
-|  `song`  |   [SongDocument](../../schemas/song.md)   |                 The requested song document.                  |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `song` | [SongDocument](../../schemas/song.md) | The requested song document. |
 | `charts` | [ChartDocument](../../schemas/chart.md)[] | All of the charts that belong to this song for this playtype. |
 
 ### Example
@@ -158,8 +158,8 @@ GET /api/v1/games/iidx/SP/songs/1
 
 ### Parameters
 
-|      Property       |  Type  |         Description         |
-| :-----------------: | :----: | :-------------------------: |
+| Property | Type | Description |
+| :-: | :-: | :-: |
 | `search` (Optional) | String | A song title to search for. |
 
 > [!note]
@@ -172,10 +172,10 @@ GET /api/v1/games/iidx/SP/songs/1
 
 ### Response
 
-| Property |                                  Type                                   |                                         Description                                         |
-| :------: | :---------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
+| Property | Type | Description |
+| :-: | :-: | :-: |
 | `charts` | Array&lt;[ChartDocument](../../schemas/chart.md) with `__playcount`&gt; | The chart documents that matched this search, or the most popular 100 charts for this game. |
-| `songs`  |           Array&lt;[SongDocument](../../schemas/song.md)&gt;            |                        The associated song documents for the charts.                        |
+| `songs` | Array&lt;[SongDocument](../../schemas/song.md)&gt; | The associated song documents for the charts. |
 
 > [!note]
 > The `__playcount` property is patched onto the chart
@@ -235,10 +235,10 @@ None.
 
 ### Response
 
-| Property |                  Type                   |           Description           |
-| :------: | :-------------------------------------: | :-----------------------------: |
-|  `song`  |  [SongDocument](../../schemas/song.md)  | The parent song for this chart. |
-| `chart`  | [ChartDocument](../../schemas/chart.md) |  The requested chart document.  |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `song` | [SongDocument](../../schemas/song.md) | The parent song for this chart. |
+| `chart` | [ChartDocument](../../schemas/chart.md) | The requested chart document. |
 
 ### Example
 
@@ -274,16 +274,16 @@ GET /api/v1/games/iidx/SP/charts/some_chart_id
 
 ### Parameters
 
-|         Property          |                                  Type                                   | Description |
-| :-----------------------: | :---------------------------------------------------------------------: | :---------: |
+| Property | Type | Description |
+| :-: | :-: | :-: |
 | `startRanking` (Optional) | Specify a start point to return 100 pbs from. Defaults to 1. Inclusive. |
 
 ### Response
 
-| Property |              Type              |             Description             |
-| :------: | :----------------------------: | :---------------------------------: |
-|  `pbs`   |    Array&lt;PBDocument&gt;     | The array of pbs sorted by ranking. |
-| `users`  | The users these PBs belong to. |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `pbs` | Array&lt;PBDocument&gt; | The array of pbs sorted by ranking. |
+| `users` | The users these PBs belong to. |
 
 ### Example
 
@@ -326,8 +326,8 @@ GET /api/v1/games/iidx/SP/charts/some_chart/pbs
 
 ### Parameters
 
-| Property |  Type  |               Description               |
-| :------: | :----: | :-------------------------------------: |
+| Property | Type | Description |
+| :-: | :-: | :-: |
 | `search` | String | The user whose PB you're searching for. |
 
 ### Response
@@ -346,14 +346,14 @@ See Above.
 
 ### Parameters
 
-| Property |  Type  |              Description               |
-| :------: | :----: | :------------------------------------: |
+| Property | Type | Description |
+| :-: | :-: | :-: |
 | `search` | String | A string to search for a given folder. |
 
 ### Response
 
-| Property |            Type             |              Description              |
-| :------: | :-------------------------: | :-----------------------------------: |
+| Property | Type | Description |
+| :-: | :-: | :-: |
 | `<body>` | Array&lt;FolderDocument&gt; | The folders that matched this search. |
 
 ### Example
@@ -387,11 +387,11 @@ None.
 
 ### Response
 
-| Property |                         Type                         |                 Description                  |
-| :------: | :--------------------------------------------------: | :------------------------------------------: |
-| `songs`  |  Array&lt;[SongDocument](../../schemas/song.md)&gt;  | The related song documents for this folder.  |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `songs` | Array&lt;[SongDocument](../../schemas/song.md)&gt; | The related song documents for this folder. |
 | `charts` | Array&lt;[ChartDocument](../../schemas/chart.md)&gt; | The related chart documents for this folder. |
-| `folder` |                    FolderDocument                    |       The folder document at this ID.        |
+| `folder` | FolderDocument | The folder document at this ID. |
 
 ### Example
 
@@ -443,8 +443,8 @@ None.
 
 ### Response
 
-| Property |            Type            |        Description        |
-| :------: | :------------------------: | :-----------------------: |
+| Property | Type | Description |
+| :-: | :-: | :-: |
 | `tables` | Array&lt;TableDocument&gt; | Every table for this GPT. |
 
 ### Example
@@ -484,10 +484,10 @@ None.
 
 ### Response
 
-| Property  |            Type             |            Description             |
-| :-------: | :-------------------------: | :--------------------------------: |
+| Property | Type | Description |
+| :-: | :-: | :-: |
 | `folders` | Array&lt;FolderDocument&gt; | All of the folders for this table. |
-|  `table`  |        TableDocument        |   The table document at this ID.   |
+| `table` | TableDocument | The table document at this ID. |
 
 ### Example
 
@@ -520,19 +520,19 @@ GET /api/v1/games/bms/7K/tableID/insane
 
 ### Parameters
 
-| Property |       Type       |                                      Description                                       |
-| :------: | :--------------: | :------------------------------------------------------------------------------------: |
-|  `alg`   |      String      |              An alternative algorithm to use instead of the GPTs default.              |
-| `limit`  | Optional Integer | Optionally, provide a number between 1 and 50 to change the amount of scores returned. |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `alg` | String | An alternative algorithm to use instead of the GPTs default. |
+| `limit` | Optional Integer | Optionally, provide a number between 1 and 50 to change the amount of scores returned. |
 
 ### Response
 
-| Property |                         Type                         |                 Description                  |
-| :------: | :--------------------------------------------------: | :------------------------------------------: |
-|  `pbs`   |               Array&lt;PBDocument&gt;                | The array of pbs part of the PB leaderboard. |
-| `songs`  |  Array&lt;[SongDocument](../../schemas/song.md)&gt;  |     The array of songs part of the PBs.      |
-| `charts` | Array&lt;[ChartDocument](../../schemas/chart.md)&gt; |     The array of charts part of the PBs.     |
-| `users`  |  Array&lt;[UserDocument](../../schemas/user.md)&gt;  |     The array of users part of the PBs.      |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `pbs` | Array&lt;PBDocument&gt; | The array of pbs part of the PB leaderboard. |
+| `songs` | Array&lt;[SongDocument](../../schemas/song.md)&gt; | The array of songs part of the PBs. |
+| `charts` | Array&lt;[ChartDocument](../../schemas/chart.md)&gt; | The array of charts part of the PBs. |
+| `users` | Array&lt;[UserDocument](../../schemas/user.md)&gt; | The array of users part of the PBs. |
 
 ---
 
@@ -542,14 +542,14 @@ GET /api/v1/games/bms/7K/tableID/insane
 
 ### Parameters
 
-| Property |  Type  |                                      Description                                       |
-| :------: | :----: | :------------------------------------------------------------------------------------: |
-| `class`  | String | Must be one of the GPTs supported classes, This specifies what distribution to return. |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `class` | String | Must be one of the GPTs supported classes, This specifies what distribution to return. |
 
 ### Response
 
-| Property |               Type                |                                  Description                                  |
-| :------: | :-------------------------------: | :---------------------------------------------------------------------------: |
+| Property | Type | Description |
+| :-: | :-: | :-: |
 | `<body>` | Record&lt;ClassValue, integer&gt; | Returns a record of the class value against the amount of people who have it. |
 
 ### Example
@@ -588,16 +588,16 @@ GET /api/v1/games/bms/7K/player-distribution?class=stslDan
 
 ### Parameters
 
-| Property |       Type       |                                               Description                                               |
-| :------: | :--------------: | :-----------------------------------------------------------------------------------------------------: |
-| `limit`  | Optional Integer | Optionally, An integer between 1 and 50 can be provided to limit the amount of returns. Defaults to 10. |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `limit` | Optional Integer | Optionally, An integer between 1 and 50 can be provided to limit the amount of returns. Defaults to 10. |
 
 ### Response
 
-| Property  |                        Type                        |                 Description                  |
-| :-------: | :------------------------------------------------: | :------------------------------------------: |
-|  `users`  | Array&lt;[UserDocument](../../schemas/user.md)&gt; | Array of the users who achieved the courses. |
-| `classes` |       Array&lt;ClassAchievementDocument&gt;        |  Data about the recently achieved classes.   |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `users` | Array&lt;[UserDocument](../../schemas/user.md)&gt; | Array of the users who achieved the courses. |
+| `classes` | Array&lt;ClassAchievementDocument&gt; | Data about the recently achieved classes. |
 
 ---
 
@@ -607,15 +607,15 @@ GET /api/v1/games/bms/7K/player-distribution?class=stslDan
 
 ### Parameters
 
-| Property |       Type       |                                            Description                                             |
-| :------: | :--------------: | :------------------------------------------------------------------------------------------------: |
-| `limit`  | Optional Integer | Optionally, provide an integer between 1 and 100 to return this amount of scores. Defaults to 100. |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `limit` | Optional Integer | Optionally, provide an integer between 1 and 100 to return this amount of scores. Defaults to 100. |
 
 ### Response
 
-| Property |                         Type                         |          Description          |
-| :------: | :--------------------------------------------------: | :---------------------------: |
-| `scores` | Array&lt;[ScoreDocument](../../schemas/score.md)&gt; |    The highlighted scores.    |
-| `users`  |  Array&lt;[UserDocument](../../schemas/user.md)&gt;  | The users who own the scores. |
-| `songs`  |  Array&lt;[SongDocument](../../schemas/song.md)&gt;  | The songs the scores are on.  |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `scores` | Array&lt;[ScoreDocument](../../schemas/score.md)&gt; | The highlighted scores. |
+| `users` | Array&lt;[UserDocument](../../schemas/user.md)&gt; | The users who own the scores. |
+| `songs` | Array&lt;[SongDocument](../../schemas/song.md)&gt; | The songs the scores are on. |
 | `charts` | Array&lt;[ChartDocument](../../schemas/chart.md)&gt; | The charts the scores are on. |

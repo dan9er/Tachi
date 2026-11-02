@@ -25,11 +25,11 @@ Logs a user in and returns a session cookie.
 
 ### Parameters
 
-|  Property   |  Type  |                                        Description                                        |
-| :---------: | :----: | :---------------------------------------------------------------------------------------: |
-| `username`  | String |                 The user's username. This is compared case-insensitively.                 |
-| `!password` | String |                                   The user's password.                                    |
-|  `captcha`  | String | The hCaptcha response token from the client widget; the server verifies it with hCaptcha. |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `username` | String | The user's username. This is compared case-insensitively. |
+| `!password` | String | The user's password. |
+| `captcha` | String | The hCaptcha response token from the client widget; the server verifies it with hCaptcha. |
 
 > [!note]
 > The `!` prefix is special in that anything with it is assumed to be private and is **always**
@@ -39,12 +39,12 @@ Logs a user in and returns a session cookie.
 
 ### Response
 
-| Property |  Type   |               Description                |
-| :------: | :-----: | :--------------------------------------: |
+| Property | Type | Description |
+| :-: | :-: | :-: |
 | `userID` | Integer | The ID of the user you authenticated as. |
 
-| HTTP Header  |                     Description                      |
-| :----------: | :--------------------------------------------------: |
+| HTTP Header | Description |
+| :-: | :-: |
 | `Set-Cookie` | Contains a session cookie for future authentication. |
 
 ### Example
@@ -79,18 +79,18 @@ POST /api/v1/auth/login
 
 ### Parameters
 
-|            Property            |                  Type                  |                                                     Description                                                      |
-| :----------------------------: | :------------------------------------: | :------------------------------------------------------------------------------------------------------------------: |
-|           `username`           |                 String                 | A string between 3 and 20 characters. The first character must be A-Z, _ or -. The other 19 may be A-Z, 0-9, _ or -. |
-|          `!password`           |                 String                 |                                           An 8 character or longer string.                                           |
-|           `!email`             |                 String                 |                   Valid email. The `!` prefix keeps this field out of server request logs.                    |
-| `inviteCode` (Kamaitachi Only) | String (Undefined/Unused on Bokutachi) |                                If on Kamaitachi, this is the user's invitation code.                                 |
-|           `captcha`            |                 String                 | The hCaptcha response token from the client widget; the server verifies it with hCaptcha. |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `username` | String | A string between 3 and 20 characters. The first character must be A-Z, _ or -. The other 19 may be A-Z, 0-9, _ or -. |
+| `!password` | String | An 8 character or longer string. |
+| `!email` | String | Valid email. The `!` prefix keeps this field out of server request logs. |
+| `inviteCode` (Kamaitachi Only) | String (Undefined/Unused on Bokutachi) | If on Kamaitachi, this is the user's invitation code. |
+| `captcha` | String | The hCaptcha response token from the client widget; the server verifies it with hCaptcha. |
 
 ### Response
 
-| Property |                 Type                  |               Description               |
-| :------: | :-----------------------------------: | :-------------------------------------: |
+| Property | Type | Description |
+| :-: | :-: | :-: |
 | `<body>` | [UserDocument](../../schemas/user.md) | The newly-created user's User Document. |
 
 ### Example
@@ -145,9 +145,9 @@ POST /api/v1/auth/register
 
 ### Parameters
 
-| Property |  Type  |                 Description                  |
-| :------: | :----: | :------------------------------------------: |
-|  `code`  | String | The Code that was sent to the users mailbox. |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `code` | String | The Code that was sent to the users mailbox. |
 
 ### Response
 
@@ -227,8 +227,8 @@ Nothing.
 
 ### Parameters
 
-| Property |  Type  |                                                   Description                                                   |
-| :------: | :----: | :-------------------------------------------------------------------------------------------------------------: |
+| Property | Type | Description |
+| :-: | :-: | :-: |
 | `!email` | String | A user's email. If the email does not correspond to any accounts, 202 is returned anyway as a security measure. Request logs omit this field. |
 
 ### Response
@@ -258,10 +258,10 @@ a URL containing the password reset code.
 
 ### Parameters
 
-|  Property   |  Type  |                            Description                             |
-| :---------: | :----: | :----------------------------------------------------------------: |
-|   `code`    | String | A password reset code. This is provided in a password reset email. |
-| `!password` | String |                     The password to change to.                     |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `code` | String | A password reset code. This is provided in a password reset email. |
+| `!password` | String | The password to change to. |
 
 ### Response
 

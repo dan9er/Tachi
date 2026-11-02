@@ -10,15 +10,15 @@ These endpoints are related to users in general.
 
 ### Parameters
 
-|      Property       |   Type   |                                              Description                                               |
-| :-----------------: | :------: | :----------------------------------------------------------------------------------------------------: |
-| `online` (Optional) | Presence |             If present, this limits the returned users to those that are currently online.             |
-| `search` (Optional) |  String  | If present, this endpoint will only return users where this string is contained within their username. |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `online` (Optional) | Presence | If present, this limits the returned users to those that are currently online. |
+| `search` (Optional) | String | If present, this endpoint will only return users where this string is contained within their username. |
 
 ### Response
 
-| Property |                        Type                        |              Description               |
-| :------: | :------------------------------------------------: | :------------------------------------: |
+| Property | Type | Description |
+| :-: | :-: | :-: |
 | `<body>` | Array&lt;[UserDocument](../../schemas/user.md)&gt; | The array of up to 100 users returned. |
 
 > [!note]
@@ -66,8 +66,8 @@ None.
 
 ### Response
 
-| Property |                 Type                  |                Description                |
-| :------: | :-----------------------------------: | :---------------------------------------: |
+| Property | Type | Description |
+| :-: | :-: | :-: |
 | `<body>` | [UserDocument](../../schemas/user.md) | The user this ID/username corresponds to. |
 
 ### Example
@@ -112,16 +112,16 @@ GET /api/v1/users/me IF authenticated as userID 1.
 
 ### Parameters
 
-|                           Property                           |      Type      |                                  Description                                  |
-| :----------------------------------------------------------: | :------------: | :---------------------------------------------------------------------------: |
-|                           `about`                            |     String     |                  An about me. This is rendered as markdown.                   |
-|                           `status`                           | String \| Null |                The users status. If null, this will be unset.                 |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `about` | String | An about me. This is rendered as markdown. |
+| `status` | String \| Null | The users status. If null, this will be unset. |
 | `discord`, `twitter`, `github`, `steam`, `youtube`, `twitch` | String \| Null | Information about this users social media. If null, this field will be unset. |
 
 ### Response
 
-| Property |                 Type                  |                     Description                      |
-| :------: | :-----------------------------------: | :--------------------------------------------------: |
+| Property | Type | Description |
+| :-: | :-: | :-: |
 | `<body>` | [UserDocument](../../schemas/user.md) | The user document with all of those changes applied. |
 
 ### Example
@@ -168,8 +168,8 @@ None.
 
 ### Response
 
-| Property |                         Type                         |                 Description                 |
-| :------: | :--------------------------------------------------: | :-----------------------------------------: |
+| Property | Type | Description |
+| :-: | :-: | :-: |
 | `<body>` | Array&lt;UserGameStatsDocument & \_\_rankingData&gt; | The array of per-game profile documents (ratings and classes) this user has. |
 
 > [!note]
@@ -247,18 +247,18 @@ GET /api/v1/users/1/game-profiles
 
 ### Parameters
 
-| Property |    Type     |           Description           |
-| :------: | :---------: | :-----------------------------: |
-|  `pfp`   | JPG, or PNG | The new profile picture to set. |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `pfp` | JPG, or PNG | The new profile picture to set. |
 
 > [!note]
 > This endpoint expects multipart form data.
 
 ### Response
 
-| Property |  Type  |                        Description                         |
-| :------: | :----: | :--------------------------------------------------------: |
-|  `get`   | String | This contains the URL to then GET the new profile picture. |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `get` | String | This contains the URL to then GET the new profile picture. |
 
 ### Example
 
@@ -341,8 +341,8 @@ Self-explanatory.
 
 ### Parameters
 
-| Property |    Type     |          Description           |
-| :------: | :---------: | :----------------------------: |
+| Property | Type | Description |
+| :-: | :-: | :-: |
 | `banner` | JPG, or PNG | The new profile banner to set. |
 
 > [!note]
@@ -350,9 +350,9 @@ Self-explanatory.
 
 ### Response
 
-| Property |  Type  |                        Description                        |
-| :------: | :----: | :-------------------------------------------------------: |
-|  `get`   | String | This contains the URL to then GET the new profile banner. |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `get` | String | This contains the URL to then GET the new profile banner. |
 
 ### Example
 
@@ -438,8 +438,8 @@ None.
 
 ### Response
 
-| Property |               Type                |                                     Description                                      |
-| :------: | :-------------------------------: | :----------------------------------------------------------------------------------: |
+| Property | Type | Description |
+| :-: | :-: | :-: |
 | `<body>` | Array&lt;NotificationDocument&gt; | An array of all of this users notifications, sorted by most recently recieved first. |
 
 ---

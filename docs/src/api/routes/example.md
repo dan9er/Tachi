@@ -25,9 +25,9 @@ _Parameters are required unless explicitly stated to be optional._
 > and all other methods are to have their content in the request body as
 > `application/json`.
 
-|       Property        |   Type   |                Description                |
-| :-------------------: | :------: | :---------------------------------------: |
-|        `name`         |  String  |      The name of the user to greet.       |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `name` | String | The name of the user to greet. |
 | `birthday` (optional) | Presence | Whether it is the user's birthday or not. |
 
 Not providing required parameters will result in a 400 error.
@@ -52,9 +52,9 @@ _Parameters are always present unless stated to be conditional/optional._
 > }
 > ```
 
-|   Property    |  Type   |                 Description                 |
-| :-----------: | :-----: | :-----------------------------------------: |
-|  `greeting`   | String  |          A greeting for the user.           |
+| Property | Type | Description |
+| :-: | :-: | :-: |
+| `greeting` | String | A greeting for the user. |
 | `wasBirthday` | Boolean | Whether today is the users birthday or not. |
 
 > [!note]
